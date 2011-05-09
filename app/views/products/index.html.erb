@@ -1,0 +1,9 @@
+<% @products.each do |t| %>   
+  
+  <h1><%= t.id %>. <a href="http://au.totaltravel.yahoo.com<%= t.description %>"><%= t.title %></a></h1>
+  <span style="color: #ccc;font-size: 11px;">http://au.totaltravel.yahoo.com<%= t.description %></span>
+  <br/>
+  <%= t.category %>
+<% end %>
+                
+
