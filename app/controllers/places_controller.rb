@@ -4,7 +4,7 @@ class PlacesController < ApplicationController
   def index
     @places = Place.all
     
-    respond_with @place
+    respond_with @places
   end
                  
   def show
