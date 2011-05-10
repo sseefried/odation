@@ -1,0 +1,19 @@
+%h1 Listing temps
+
+%table
+  %tr
+    %th Title
+    %th
+    %th
+    %th
+
+  - @temps.each do |temp|
+    %tr
+      %td= temp.title
+      %td= link_to 'Show', temp
+      %td= link_to 'Edit', edit_temp_path(temp)
+      %td= link_to 'Destroy', temp, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Temp', new_temp_path

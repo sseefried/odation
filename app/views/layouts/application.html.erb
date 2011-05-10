@@ -7,8 +7,22 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div class="page">
 
-<%= yield %>
+  <div class="pageWrapper">
+    <div id="header">
+      <h1>Odation</h1>
+    </div><!-- #header -->
+    <div id="body">
+      <%= yield %> 
+    </div><!-- #body -->
+    <div id="footer">
+      <h2>&copy; bottlebrush</h2>
+    </div><!-- #footer -->
+    
+    
+  </div><!-- .pageWrapper -->  
+</div><!-- .page -->       
 
 </body>
 </html>

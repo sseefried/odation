@@ -1,9 +1,15 @@
 Odation::Application.routes.draw do
+  resources :temps
+
+  get "places/index"
+
   devise_for :users
 
   get "destinations/index"  
   
   resources :products
+  
+  resources :places
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

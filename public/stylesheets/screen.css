@@ -24,3 +24,21 @@ a img { border: none; }
 
 /* line 115, ../../../../.rvm/gems/ruby-1.9.2-rc2@rails3tutorial/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 12, ../../app/stylesheets/screen.scss */
+body { font-family: Cambria, Verdana, Helvetica, sans-serif; }
+
+/* line 14, ../../app/stylesheets/screen.scss */
+h1, h2, h3 { font-weight: bold; }
+
+/* line 15, ../../app/stylesheets/screen.scss */
+p { color: #666; }
+
+/* line 17, ../../app/stylesheets/screen.scss */
+.pageWrapper { width: 980px; margin: 0 auto; }
+
+/* line 21, ../../app/stylesheets/screen.scss */
+#header { border-bottom: 1px solid #efefef; padding: 10px 0; margin: 0 0 10px 0; }
+
+/* line 26, ../../app/stylesheets/screen.scss */
+#footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; }

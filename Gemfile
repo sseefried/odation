@@ -15,6 +15,8 @@ gem 'devise'
 gem 'formtastic'
 gem 'jquery-rails'
 
+gem 'ancestry'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
