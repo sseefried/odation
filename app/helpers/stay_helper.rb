@@ -1,0 +1,2 @@
+module StayHelper
+end

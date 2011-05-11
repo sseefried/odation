@@ -89,4 +89,13 @@ body { background: url(/images/top_strap.jpg) top repeat-x}
 	margin: 10px 0 0 0;
 	background: #d9d9d9 ;
 	min-height: 200px;
+	ul { 
+		float: left;
+		width: 220px;
+		margin: 10px 10px 20px 0;}
 	}
+.leftCol { float: left; }
+.rightCol { float: left; width: 300px; margin-left: 15px; }
+h2 span { color: #ff9000; font-style: oblique;}
+	
+.clearfix { clear: both; line-height: 1; height: 1px;}

@@ -78,3 +78,17 @@ body { background: url(/images/top_strap.jpg) top repeat-x; }
 
 /* line 86, ../../app/stylesheets/screen.scss */
 #footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; background: #d9d9d9; min-height: 200px; }
+/* line 92, ../../app/stylesheets/screen.scss */
+#footer ul { float: left; width: 220px; margin: 10px 10px 20px 0; }
+
+/* line 97, ../../app/stylesheets/screen.scss */
+.leftCol { float: left; }
+
+/* line 98, ../../app/stylesheets/screen.scss */
+.rightCol { float: left; width: 300px; margin-left: 15px; }
+
+/* line 99, ../../app/stylesheets/screen.scss */
+h2 span { color: #ff9000; font-style: oblique; }
+
+/* line 101, ../../app/stylesheets/screen.scss */
+.clearfix { clear: both; line-height: 1; height: 1px; }

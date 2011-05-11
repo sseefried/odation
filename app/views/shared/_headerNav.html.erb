@@ -1,9 +1,9 @@
 <div id="navStrap">
   <ul>
-    <li><a href="" class="selected">Home</a></li>
-    <li><a href="">Stay</a></li>
-    <li><a href="">Fly</a></li>
-    <li><a href="">Fun</a></li>
-    <li><a href="">Deals</a></li>
+    <li><%= tab_selector("Home", root_path, :title => 'title') %></li>  
+    <li><%= link_to "Stay", stay_index_path  %></li>
+    <li><%= link_to "Fly", fly_index_path  %></li>
+    <li><%= link_to "Deals", deals_index_path  %></li>
   </ul>
-</div><!-- #navStrap -->
+</div><!-- #navStrap -->     
+                                                            

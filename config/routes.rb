@@ -1,4 +1,12 @@
 Odation::Application.routes.draw do
+  get "subscribers/index"
+
+  get "deals/index"
+
+  get "fly/index"
+
+  get "stay/index"
+
   get "home/index"
 
   resources :temps

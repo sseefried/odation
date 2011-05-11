@@ -3,8 +3,16 @@
 <head>
   <title>Odation</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :defaults, 'facebox' %>
   <%= csrf_meta_tag %>
+  <script type="text/javascript"> 
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loadingImage : 'images/loading.gif',
+        closeImage   : 'images/closelabel.png'
+      })
+    })
+  </script>
 </head>
 <body>
 <div class="page">
@@ -15,7 +23,6 @@
       <%= render 'shared/headerNav' %>
     </div><!-- #header -->
     <div id="body">
-      
       <div class="leftCol">
         <%= yield %> 
       </div><!-- .leftCol -->
@@ -56,6 +63,9 @@
           <li><a href="">19</a></li>
           <li><a href="">20</a></li>
         </ul>
+        <div class="clearfix">
+          
+        </div><!-- .clearfix -->
         <h4>&copy; bottlebrush</h4> 
       </div><!-- .pageWrapper -->
       
