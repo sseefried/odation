@@ -15,15 +15,39 @@
       <%= render 'shared/headerNav' %>
     </div><!-- #header -->
     <div id="body">
-      <%= yield %> 
+      
+      <div class="leftCol">
+        <%= yield %> 
+      </div><!-- .leftCol -->
+      <div class="rightCol">
+        <%= yield :rightCol %>
+      </div><!-- .rightCol -->
+
     </div><!-- #body -->
+  </div><!-- .pageWrapper -->  
+
     <div id="footer">
-      <h2>&copy; bottlebrush</h2>
+      <div class="pageWrapper">
+        <h2>&copy; bottlebrush</h2> 
+      </div><!-- .pageWrapper -->
+      
     </div><!-- #footer -->
     
     
-  </div><!-- .pageWrapper -->  
+  
 </div><!-- .page -->       
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-819046-22']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

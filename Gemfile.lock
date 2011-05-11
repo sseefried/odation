@@ -66,6 +66,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    newrelic_rpm (2.14.1)
     nokogiri (1.4.4)
     orm_adapter (0.0.4)
     polyglot (0.3.1)
@@ -110,6 +111,7 @@ DEPENDENCIES
   formtastic
   haml-rails
   jquery-rails
+  newrelic_rpm
   nokogiri
   rails (= 3.0.3)
   sass

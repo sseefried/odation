@@ -26,7 +26,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 /* line 12, ../../app/stylesheets/screen.scss */
-body { font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; }
+body { font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
 /* line 14, ../../app/stylesheets/screen.scss */
 h1, h2, h3 { font-weight: bold; }
@@ -41,24 +41,40 @@ a:hover { border: none; background: none; }
 body { background: url(/images/top_strap.jpg) top repeat-x; }
 
 /* line 19, ../../app/stylesheets/screen.scss */
-.pageWrapper { width: 980px; margin: 0 auto; }
-
+.block { background: #efefef; padding: 10px; }
+/* line 20, ../../app/stylesheets/screen.scss */
+.block h2 { font-size: 22px; }
 /* line 23, ../../app/stylesheets/screen.scss */
-#header { padding: 6px 0; margin: 0 0 10px 0; }
-/* line 27, ../../app/stylesheets/screen.scss */
-#header #headerStrap { height: 73px; }
-/* line 31, ../../app/stylesheets/screen.scss */
-#header #navStrap { height: 43px; }
-/* line 33, ../../app/stylesheets/screen.scss */
-#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
-/* line 34, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li { float: left; }
-/* line 35, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
-/* line 40, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a:hover { color: #ccc; }
-/* line 41, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
+.block .blockContent { border: 1px solid #ccc; padding: 20px; background: #fff; }
+/* line 28, ../../app/stylesheets/screen.scss */
+.block label { text-transform: uppercase; font-size: 11px; }
 
-/* line 53, ../../app/stylesheets/screen.scss */
-#footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; }
+/* line 33, ../../app/stylesheets/screen.scss */
+.pageWrapper { width: 980px; margin: 0 auto; position: relative; }
+
+/* line 39, ../../app/stylesheets/screen.scss */
+#header { padding: 6px 0; margin: 0 0 10px 0; }
+/* line 43, ../../app/stylesheets/screen.scss */
+#header #headerStrap { height: 73px; }
+/* line 47, ../../app/stylesheets/screen.scss */
+#header #navStrap { height: 43px; }
+/* line 49, ../../app/stylesheets/screen.scss */
+#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
+/* line 50, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li { float: left; }
+/* line 51, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
+/* line 56, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a:hover { color: #ccc; }
+/* line 57, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
+/* line 66, ../../app/stylesheets/screen.scss */
+#header #sign_in { position: absolute; top: 18px; right: 0px; height: 38px; width: 200px; background: url(/images/sign_in.jpg) center center no-repeat; }
+/* line 73, ../../app/stylesheets/screen.scss */
+#header #sign_in a { color: #bbb; text-decoration: none; padding: 10px 0px 10px 30px; line-height: 38px; }
+
+/* line 82, ../../app/stylesheets/screen.scss */
+#body { min-height: 500px; }
+
+/* line 86, ../../app/stylesheets/screen.scss */
+#footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; background: #d9d9d9; min-height: 200px; }

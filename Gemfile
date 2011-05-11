@@ -18,6 +18,9 @@ gem 'jquery-rails'
 gem 'ancestry'
 gem 'acts_as_list'            
 
+#analytics
+gem 'newrelic_rpm'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
