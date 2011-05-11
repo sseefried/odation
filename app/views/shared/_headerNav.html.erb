@@ -1,9 +1,10 @@
 <div id="navStrap">
   <ul>
-    <li><%= tab_selector("Home", root_path, :title => 'title') %></li>  
-    <li><%= link_to "Stay", stay_index_path  %></li>
-    <li><%= link_to "Fly", fly_index_path  %></li>
-    <li><%= link_to "Deals", deals_index_path  %></li>
+    <li><%= nav_helper("Home", root_path, "Return Home, not really", "home") %></li>  
+    <li><%= nav_helper("Stay",  stay_index_path, "Find a place to stay", "stay") %></li>
+   <li><%= nav_helper("Fly", fly_index_path,"Find a way to get there", "fly") %></li>
+       <li><%= nav_helper("Deals", deals_index_path,"Save yourself some cash", "deals") %></li>
+
   </ul>
 </div><!-- #navStrap -->     
                                                             
