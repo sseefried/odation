@@ -26,7 +26,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 /* line 12, ../../app/stylesheets/screen.scss */
-body { font-family: Cambria, Verdana, Helvetica, sans-serif; }
+body { font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; }
 
 /* line 14, ../../app/stylesheets/screen.scss */
 h1, h2, h3 { font-weight: bold; }
@@ -34,11 +34,31 @@ h1, h2, h3 { font-weight: bold; }
 /* line 15, ../../app/stylesheets/screen.scss */
 p { color: #666; }
 
+/* line 16, ../../app/stylesheets/screen.scss */
+a:hover { border: none; background: none; }
+
 /* line 17, ../../app/stylesheets/screen.scss */
+body { background: url(/images/top_strap.jpg) top repeat-x; }
+
+/* line 19, ../../app/stylesheets/screen.scss */
 .pageWrapper { width: 980px; margin: 0 auto; }
 
-/* line 21, ../../app/stylesheets/screen.scss */
-#header { border-bottom: 1px solid #efefef; padding: 10px 0; margin: 0 0 10px 0; }
+/* line 23, ../../app/stylesheets/screen.scss */
+#header { padding: 6px 0; margin: 0 0 10px 0; }
+/* line 27, ../../app/stylesheets/screen.scss */
+#header #headerStrap { height: 73px; }
+/* line 31, ../../app/stylesheets/screen.scss */
+#header #navStrap { height: 43px; }
+/* line 33, ../../app/stylesheets/screen.scss */
+#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
+/* line 34, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li { float: left; }
+/* line 35, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
+/* line 40, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a:hover { color: #ccc; }
+/* line 41, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
 
-/* line 26, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/stylesheets/screen.scss */
 #footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; }

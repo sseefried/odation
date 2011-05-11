@@ -9,22 +9,50 @@
 
 $primaryborders : #efefef;
 
-body {font-family: Cambria, Verdana, Helvetica, sans-serif }
+body {font-family: Arial, Cambria, Verdana, Helvetica, sans-serif }
 
 h1, h2, h3 { font-weight: bold;}
 p { color: #666;}
+a:hover { border: none; background: none;}
+body { background: url(/images/top_strap.jpg) top repeat-x}
 
 .pageWrapper { 
 	width: 980px; 
 	margin: 0 auto;} 
 
 #header { 
-	border-bottom: 1px solid $primaryborders;
-	padding: 10px 0;
-	margin: 0 0 10px 0;}
+
+	padding: 6px 0;
+	margin: 0 0 10px 0;
+	#headerStrap {
+		height: 73px;
+	}
+	
+	#navStrap {
+		height: 43px;
+		ul, li { list-style: none;  display: block;}
+		ul li { float: left;
+			a {
+			 line-height: 44px; height: 44px; padding: 15px 30px;
+			text-decoration: none; text-transform: uppercase;
+			color: #333; font-weight: bold;	
+			}
+			a:hover {  color: #ccc}
+			a.selected {
+				background: url(/images/nav_select.jpg) top repeat-x;
+				color: #333;
+				
+			}
+		}
+
+		
+	}
+	
+	}
 
 #footer { 
 	border-top: 1px solid $primaryborders;
 	padding: 10px 0;
 	margin: 10px 0 0 0;
+	
 	}

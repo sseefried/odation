@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class GeographyHelperTest < ActionView::TestCase
+class PlaceHelperTest < ActionView::TestCase
 end
