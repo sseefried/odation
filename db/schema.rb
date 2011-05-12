@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110510102002) do
+ActiveRecord::Schema.define(:version => 20110512091003) do
+
+  create_table "destinations", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.integer  "seo_meta"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "places", :force => true do |t|
     t.string   "title"
@@ -31,6 +39,22 @@ ActiveRecord::Schema.define(:version => 20110510102002) do
     t.datetime "updated_at"
     t.string   "category"
     t.string   "address"
+  end
+
+  create_table "seo_metas", :force => true do |t|
+    t.string   "meta_description"
+    t.string   "meta_title"
+    t.string   "meta_keyword"
+    t.string   "meta_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subscribers", :force => true do |t|
+    t.string   "email"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "temps", :force => true do |t|
