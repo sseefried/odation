@@ -1,9 +1,27 @@
 <div id="headerStrap">
   <%= link_to image_tag("logo.jpg", :title => "Try something different", :class => "logo"), root_url  %>
 
+
+
+<% if current_user %>
+  <div class="current">
+    
+      <div id="sign_in">
+              
+        <%= link_to 'Sign Out', destroy_session_url(current_user) %>
+      </div><!-- #sign_in -->
+   
+  </div><!-- .current -->
+<% else %>
   <div id="sign_in">
-    <%= link_to 'Sign Up', new_user_registration_url %>
-    <%= link_to 'Sign In', new_user_session_path %>
+    <%= link_to 'Sign Up', authentications_url %>
+    <%= link_to 'Sign In', authentications_url %>
   </div><!-- #sign_in -->
+<% end %>
+  
+
+  
+
+
 </div><!-- #topStrap -->   
 

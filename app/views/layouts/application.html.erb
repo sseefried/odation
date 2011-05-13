@@ -25,9 +25,20 @@
     </div><!-- #header -->
     <div id="body">
       <div class="leftCol">
+        <%= flash[:notice] %>
+   
         <%= yield %> 
       </div><!-- .leftCol -->
       <div class="rightCol">
+        <% if current_user %>
+        <div class="block">
+          
+          <div class="blockContent">
+            <%= current_user.email %>
+          </div><!-- .blockContent -->
+          
+        </div><!-- .block --> 
+        <% end %>
         <%= yield :rightCol %>
       </div><!-- .rightCol -->
 

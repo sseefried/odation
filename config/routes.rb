@@ -1,4 +1,6 @@
 Odation::Application.routes.draw do
+  resources :authentications
+
   get "subscribers/index"
 
   get "deals/index"
@@ -13,8 +15,8 @@ Odation::Application.routes.draw do
 
   get "places/index"
                    
-
-  devise_for :users
+  match 'auth/:provider/callback' => 'authentications#create'
+  devise_for :users, :controllers => { :registrations => 'registrations'}
 
   get "destinations/index"  
   

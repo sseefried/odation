@@ -12,6 +12,9 @@ gem 'haml-rails'
 gem 'sass'
 
 gem 'devise'
+gem 'omniauth'
+
+
 gem 'formtastic'
 gem 'jquery-rails'
 
