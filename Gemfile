@@ -12,7 +12,7 @@ gem 'haml-rails'
 gem 'sass'
 
 gem 'devise'
-gem 'omniauth', '0.2.0'
+gem 'omniauth'
 
 
 gem 'formtastic'
