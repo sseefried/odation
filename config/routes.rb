@@ -16,6 +16,7 @@ Odation::Application.routes.draw do
   get "places/index"
                    
   match 'auth/:provider/callback' => 'authentications#create'
+
   devise_for :users, :controllers => { :registrations => 'registrations'}
 
   get "destinations/index"  
