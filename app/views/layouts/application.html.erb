@@ -4,7 +4,7 @@
   <title><%= yield :title %></title>
   
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults, 'facebox' %>
+  <%= javascript_include_tag :defaults, 'facebox', 'jquery.cookie' %>
   <%= csrf_meta_tag %>
   <script type="text/javascript"> 
     jQuery(document).ready(function($) {
@@ -12,10 +12,29 @@
         loadingImage : 'images/loading.gif',
         closeImage   : 'images/closelabel.png'
       })
+      $(".hide").click(function () {
+        $(".hide").parent().parent().hide("medium");
+        $.cookie('login_strap', 'collapsed'); 
+        
+
+
+      });
+
+       var loginStrap = $.cookie('login_strap');
+      	if (loginStrap == 'collapsed') {
+      		$('.loginStrap').css("display","none");
+
+      	};
+   
+
     })
   </script>
 </head>
 <body>
+  <% if current_user %>
+  <% else %>
+    <%= render 'shared/loginStrap' %>
+  <% end %> 
 <div class="page">
 
   <div class="pageWrapper">
@@ -26,7 +45,8 @@
     <div id="body">
       <div class="leftCol">
         <%= flash[:notice] %>
-   
+
+
         <%= yield %> 
       </div><!-- .leftCol -->
       <div class="rightCol">
@@ -41,6 +61,8 @@
         <% end %>
         <%= yield :rightCol %>
       </div><!-- .rightCol -->
+    
+            
 
     </div><!-- #body -->
   </div><!-- .pageWrapper -->  
@@ -48,7 +70,7 @@
     <div id="footer">
       <div class="pageWrapper">
         <ul>
-          <li><a href="">1</a></li>
+          <li><a href="" class="cookieflush">1</a></li>
           <li><a href="">2</a></li>
           <li><a href="">3</a></li>
           <li><a href="">4</a></li>

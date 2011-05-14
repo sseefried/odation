@@ -14,7 +14,15 @@ body {font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #
 h1, h2, h3 { font-weight: bold;}
 p { color: #666;}
 a:hover { border: none; background: none;}
-body { background: url(/images/top_strap.jpg) top repeat-x}
+ 
+
+
+.loginStrap { background: #34c15c; color: #fff; text-shadow: #666 1px 1px 1px; padding: 5px 0; border-bottom: 1px solid #fff; font-weight: bold; line-height: 40px; 
+	img { margin: 0 5px -6px;
+		}
+		a.hide { position: absolute; top: 3px; right: 3px; padding-left:25px; background: url(/images/close_icon.jpg) center left no-repeat; font-size: 12px; font-weight: normal; text-decoration: none; color: #fff;text-shadow: none; }
+	}
+.page { background: url(/images/top_strap.jpg) top repeat-x}
 
 .block {
 	h2 { font-size: 22px; } 

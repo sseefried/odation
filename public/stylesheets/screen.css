@@ -37,85 +37,92 @@ p { color: #666; }
 /* line 16, ../../app/stylesheets/screen.scss */
 a:hover { border: none; background: none; }
 
-/* line 17, ../../app/stylesheets/screen.scss */
-body { background: url(/images/top_strap.jpg) top repeat-x; }
-
-/* line 19, ../../app/stylesheets/screen.scss */
-.block { background: #efefef; padding: 10px; }
 /* line 20, ../../app/stylesheets/screen.scss */
-.block h2 { font-size: 22px; }
+.loginStrap { background: #34c15c; color: #fff; text-shadow: #666 1px 1px 1px; padding: 5px 0; border-bottom: 1px solid #fff; font-weight: bold; line-height: 40px; }
+/* line 21, ../../app/stylesheets/screen.scss */
+.loginStrap img { margin: 0 5px -6px; }
 /* line 23, ../../app/stylesheets/screen.scss */
-.block .blockContent { border: 1px solid #ccc; padding: 20px; background: #fff; }
+.loginStrap a.hide { position: absolute; top: 3px; right: 3px; padding-left: 25px; background: url(/images/close_icon.jpg) center left no-repeat; font-size: 12px; font-weight: normal; text-decoration: none; color: #fff; text-shadow: none; }
+
+/* line 25, ../../app/stylesheets/screen.scss */
+.page { background: url(/images/top_strap.jpg) top repeat-x; }
+
+/* line 27, ../../app/stylesheets/screen.scss */
+.block { background: #efefef; padding: 10px; }
 /* line 28, ../../app/stylesheets/screen.scss */
+.block h2 { font-size: 22px; }
+/* line 31, ../../app/stylesheets/screen.scss */
+.block .blockContent { border: 1px solid #ccc; padding: 20px; background: #fff; }
+/* line 36, ../../app/stylesheets/screen.scss */
 .block label { text-transform: uppercase; font-size: 11px; }
 
-/* line 33, ../../app/stylesheets/screen.scss */
+/* line 41, ../../app/stylesheets/screen.scss */
 .pageWrapper { width: 980px; margin: 0 auto; position: relative; }
 
-/* line 39, ../../app/stylesheets/screen.scss */
-#header { padding: 6px 0; margin: 0 0 10px 0; }
-/* line 43, ../../app/stylesheets/screen.scss */
-#header #headerStrap { height: 73px; }
 /* line 47, ../../app/stylesheets/screen.scss */
-#header #navStrap { height: 43px; }
-/* line 49, ../../app/stylesheets/screen.scss */
-#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
-/* line 50, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li { float: left; }
+#header { padding: 6px 0; margin: 0 0 10px 0; }
 /* line 51, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
-/* line 56, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a:hover { color: #ccc; }
+#header #headerStrap { height: 73px; }
+/* line 55, ../../app/stylesheets/screen.scss */
+#header #navStrap { height: 43px; }
 /* line 57, ../../app/stylesheets/screen.scss */
+#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
+/* line 58, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li { float: left; }
+/* line 59, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
+/* line 64, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a:hover { color: #ccc; }
+/* line 65, ../../app/stylesheets/screen.scss */
 #header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 74, ../../app/stylesheets/screen.scss */
 #header #sign_in { position: absolute; top: 18px; right: 0px; height: 38px; width: 200px; background: url(/images/sign_in.jpg) center center no-repeat; }
-/* line 73, ../../app/stylesheets/screen.scss */
+/* line 81, ../../app/stylesheets/screen.scss */
 #header #sign_in a { color: #bbb; text-decoration: none; padding: 10px 0px 10px 30px; line-height: 38px; }
 
-/* line 82, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 #body { min-height: 500px; }
 
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 94, ../../app/stylesheets/screen.scss */
 #footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; background: #d9d9d9; min-height: 200px; }
-/* line 92, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 #footer ul { float: left; width: 220px; margin: 10px 10px 20px 0; }
 
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 .leftCol { float: left; width: 660px; }
 
-/* line 98, ../../app/stylesheets/screen.scss */
+/* line 106, ../../app/stylesheets/screen.scss */
 .rightCol { float: left; width: 300px; margin-left: 15px; }
 
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 107, ../../app/stylesheets/screen.scss */
 h2 span { color: #ff9000; font-style: oblique; }
 
-/* line 101, ../../app/stylesheets/screen.scss */
+/* line 109, ../../app/stylesheets/screen.scss */
 .clearfix { clear: both; line-height: 1; height: 1px; }
 
-/* line 103, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 .authentications { margin-bottom: 30px; }
 
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 115, ../../app/stylesheets/screen.scss */
 .authentication { width: 130px; float: left; background-color: #EEE; border: solid 1px #999; padding: 5px 10px; -moz-border-radius: 8px; -webkit-border-radius: 8px; position: relative; margin-right: 10px; }
 
-/* line 119, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 .authentication .remove { text-decoration: none; position: absolute; top: 3px; right: 3px; color: #333; padding: 2px 4px; font-size: 10px; }
 
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 137, ../../app/stylesheets/screen.scss */
 .authentication .remove:hover { color: #CCC; background-color: #777; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
 
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 .authentication img { float: left; margin-right: 10px; }
 
-/* line 141, ../../app/stylesheets/screen.scss */
+/* line 149, ../../app/stylesheets/screen.scss */
 .authentication .provider { font-weight: bold; }
 
-/* line 145, ../../app/stylesheets/screen.scss */
+/* line 153, ../../app/stylesheets/screen.scss */
 .authentication .uid { color: #666; font-size: 11px; }
 
-/* line 150, ../../app/stylesheets/screen.scss */
+/* line 158, ../../app/stylesheets/screen.scss */
 .auth_provider img { display: block; }
 
-/* line 154, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
 .auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
