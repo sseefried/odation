@@ -50,6 +50,7 @@
         <%= yield %> 
       </div><!-- .leftCol -->
       <div class="rightCol">
+        
         <% if current_user %>
         <div class="block">
           
@@ -58,7 +59,9 @@
           </div><!-- .blockContent -->
           
         </div><!-- .block --> 
-        <% end %>
+        <% end %>               
+        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FOdation%2F166209226773601&amp;width=300&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=true&amp;height=427" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:427px;" allowTransparency="true"></iframe>
+        
         <%= yield :rightCol %>
       </div><!-- .rightCol -->
     
