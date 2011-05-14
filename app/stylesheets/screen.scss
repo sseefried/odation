@@ -11,8 +11,10 @@ $primaryborders : #efefef;
 
 body {font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
-h1, h2, h3 { font-weight: bold;}
-p { color: #666;}
+h1, h2, h3 { font-weight: bold;} 
+h1 { font-size: 24px; line-height: 46px; color: #2871b4	;}  
+h2 { font-size: 18px; line-height: 36px;}  
+p { color: #666; padding-bottom: 26px;line-height: 22px; font-size: 12px;}
 a:hover { border: none; background: none;}
  
 
@@ -28,6 +30,7 @@ a:hover { border: none; background: none;}
 	h2 { font-size: 22px; } 
  	background: #efefef;
 	padding: 10px;
+	margin-bottom: 10px;
  	.blockContent { 
 		border: 1px solid #ccc; 
 		padding: 20px; 
