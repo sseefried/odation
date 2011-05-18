@@ -18,5 +18,5 @@ class User < ActiveRecord::Base
     (authentications.empty? || !password.blank?) && super
   end
 
-
+  
 end

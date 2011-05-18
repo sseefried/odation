@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20110518101359) do
     t.string   "meta_keywords"
     t.string   "fb_property"
     t.string   "fb_content"
+    t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

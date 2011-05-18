@@ -9,7 +9,8 @@ class CreatePosts < ActiveRecord::Migration
       t.string :meta_description
       t.string :meta_keywords
       t.string :fb_property
-      t.string :fb_content
+      t.string :fb_content 
+      t.string :permalink
 
       t.timestamps
     end

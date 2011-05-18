@@ -15,8 +15,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'nested_form'
 
-
-
+                
 gem 'formtastic'
 gem 'jquery-rails'
 
