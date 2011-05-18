@@ -1,4 +1,4 @@
 class Destination < ActiveRecord::Base
-    has_one :seo_meta        
+    has_one :metadata
 
 end

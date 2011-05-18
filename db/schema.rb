@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110514104758) do
+ActiveRecord::Schema.define(:version => 20110518101359) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -39,21 +39,16 @@ ActiveRecord::Schema.define(:version => 20110514104758) do
 
   add_index "places", ["ancestry"], :name => "index_places_on_ancestry"
 
-  create_table "products", :force => true do |t|
-    t.text     "title"
-    t.text     "description"
-    t.decimal  "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "category"
-    t.string   "address"
-  end
-
-  create_table "seo_metas", :force => true do |t|
-    t.string   "meta_description"
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "user_id"
+    t.integer  "tags_id"
     t.string   "meta_title"
-    t.string   "meta_keyword"
-    t.string   "meta_url"
+    t.string   "meta_description"
+    t.string   "meta_keywords"
+    t.string   "fb_property"
+    t.string   "fb_content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -71,12 +66,6 @@ ActiveRecord::Schema.define(:version => 20110514104758) do
   create_table "subscribers", :force => true do |t|
     t.string   "email"
     t.string   "status"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "temps", :force => true do |t|
-    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

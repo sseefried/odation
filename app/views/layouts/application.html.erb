@@ -3,11 +3,25 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-  <title><%= yield :title %></title>
+  <title><%= yield :title || "Odation - A different take on accommodation" %></title>
+  
+  <meta property="og:title" content="Odation Protocol Please"/>
+  <meta property="og:type" content="city "/>
+    <meta property="og:url" content="http://odation.com/stay/index"/>
+    <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+    <meta property="og:site_name" content="IMDb"/>
+
+    <meta property="og:description"
+          content="A group of U.S. Marines, under command of
+                   a renegade general, take over Alcatraz and
+                   threaten San Francisco Bay with biological
+                   weapons."/>
+  
+  
   <meta property="fb:app_id" content="109302305823116" />
   <meta property="fb:page_id" content="109302305823116" /> 
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults, 'facebox', 'jquery.cookie' %>
+  <%= javascript_include_tag :defaults, 'facebox', 'jquery.cookie', 'nested_form' %>
   <%= csrf_meta_tag %>
   <script type="text/javascript"> 
     jQuery(document).ready(function($) {
@@ -25,105 +39,8 @@
       	};
       })
   </script>   
-  <script> 
-    var movieList = new Array();
-    var movieListSorted = new Array();
-    var friendCount = 0;
-    function showMovies() {
-      alert(movieList.length);
-    }
-    function compareMovies(movieA, movieB) {
-      if (movieA.name === movieB.name) return 0;
-      if (movieA.name > movieB.name) return 1;
-      return -1;
-    }
-    function popularMovies(movieA, movieB) {
-      return movieB.mCount - movieA.mCount;
-    }
-    function data_fetch_postproc() {
-      document.getElementById('test').innerHTML 
-        = "Generating recommendations ... ";
-      movieList.sort(compareMovies);
-      // Now we have sorted list, dedupe and count
-      mCtr = 0;
-      for (i = 0; i < movieList.length; i++)
-      {
-        var count = 0;
-        movieListSorted[mCtr] = movieList[i];
-        for ( j = i; j < movieList.length; j++)
-        {
-          if ( movieList[i].name === movieList[j].name ) {
-            count++;
-          } else {
-            break;
-          }
-        }
-        i = i+count-1;
-        movieListSorted[mCtr++].mCount = count;
-      }
-      var maxResults = 100;
-      if( movieListSorted.length < 100) {
-        maxResults = movieListSorted.length;
-      } 
-      movieListSorted.sort(popularMovies);
-      document.getElementById('test').innerHTML = "";
-      for( i=0; i<maxResults; i++) {
-        var newDiv = document.createElement("DIV");
-        newDiv.id = movieListSorted[i].id;
-        newDiv.innerHTML = movieListSorted[i].name + ' : Likes - ' 
-          + movieListSorted[i].mCount;
-        document.getElementById("movies").appendChild(newDiv);
-        FB.api('/'+movieListSorted[i].id, function(response) {
-          var newDiv = document.createElement("DIV");
-          newDiv.innerHTML = "<img src='"+response.picture+"'>"
-            + "</img><br/>";
-          if( response.link) {
-            newDiv.innerHTML+= "<a href='"+response.link+"'>"
-              +response.link+"</a><br/>";
-            newDiv.innerHTML+= '<iframe src='
-              + '"http://www.facebook.com/plugins/like.php?'
-              + 'href='+response.link+'&amp;layout=standard'
-              + '&amp;show_faces=true&amp;'
-              + 'width=450&amp;action=like&amp;'
-              + 'colorscheme=light&amp;height=80"' 
-              + 'scrolling="no" frameborder="0" style="'
-              + 'border:none; overflow:hidden;' 
-              + 'width:450px; height:80px;"'
-              + 'allowTransparency="true"></iframe><br/>';
-          }
-          document.getElementById(response.id).appendChild(newDiv);
-        });
-      }
-    }
-    function get_friend_likes() {
-      document.getElementById('test').innerHTML = "Requesting "
-        + "data from Facebook ... ";
-      FB.api('/me/friends', function(response) {
-          friendCount = response.data.length;
-          for( i=0; i<response.data.length; i++) {
-            friendId = response.data[i].id;
-            FB.api('/'+friendId+'/movies', function(response) {
-              movieList = movieList.concat(response.data);
-              friendCount--;
-              document.getElementById('test').innerHTML = friendCount 
-                + " friends to go ... ";
-              if(friendCount === 0) { data_fetch_postproc(); };
-            });
-          } 
-        });
-    }
-  </script>
-    <meta property="og:title" content="Odation Protocol Please"/>
-     <meta property="og:type" content="city "/>
-     <meta property="og:url" content="http://odation.com/stay/index"/>
-     <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
-     <meta property="og:site_name" content="IMDb"/>
-
-     <meta property="og:description"
-           content="A group of U.S. Marines, under command of
-                    a renegade general, take over Alcatraz and
-                    threaten San Francisco Bay with biological
-                    weapons."/>
+  
+ 
 </head>
 <body>
   <% if current_user %>
@@ -161,8 +78,7 @@
         <div style="clear: both;"></div>
         <%= yield :rightCol %>
       </div><!-- .rightCol -->
-                         <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="odation.com" num_posts="4" width="500"></fb:comments>
-            
+                      
 
     </div><!-- #body -->
   </div><!-- .pageWrapper -->  
@@ -170,10 +86,10 @@
     <div id="footer">
       <div class="pageWrapper">
         <ul>
-          <li><a href="">Melbourne Hotels</a><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=109302305823116&amp;xfbml=1"></script><fb:like href="odation.com" send="true" width="450" show_faces="true" font=""></fb:like></li>
-          <li><a href="">Sydney Hotels</a><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=109302305823116&amp;xfbml=1"></script><fb:like href="odation.com/melbournehotels" send="true" width="450" show_faces="true" font=""></fb:like></li>
-          <li><a href="">Bali Accommodation</a><div id="fb-root"></div><fb:like href="http://odation.com/stay/index" send="true" width="450" show_faces="true" font=""></fb:like></li>
-          <li><a href="">Singapore Hotels</a> <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=109302305823116&amp;xfbml=1"></script><fb:like href="http://odation.com/singapore-hotels" send="false" layout="button_count" width="450" show_faces="false" font=""></fb:like> </li>
+          <li><a href="">Melbourne Hotels</a></li>
+          <li><a href="">Sydney Hotels</a></li>
+          <li><a href="">Bali Accommodation</a></li>
+          <li><a href="">Singapore Hotels</a>  </li>
           <li><a href="">Gold Coast Accommodation</a></li>
         </ul>
         <ul>

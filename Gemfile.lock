@@ -74,6 +74,7 @@ GEM
     multi_json (1.0.2)
     multi_xml (0.2.2)
     multipart-post (1.1.0)
+    nested_form (0.1.1)
     net-ldap (0.2.2)
     newrelic_rpm (3.0.0)
     nokogiri (1.4.4)
@@ -167,6 +168,7 @@ DEPENDENCIES
   formtastic
   haml-rails
   jquery-rails
+  nested_form
   newrelic_rpm
   nokogiri
   omniauth

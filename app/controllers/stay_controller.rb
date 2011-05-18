@@ -6,3 +6,4 @@ class StayController < ApplicationController
   
 
 end
+                                                     2

@@ -13,7 +13,7 @@ gem 'sass'
 
 gem 'devise'
 gem 'omniauth'
-
+gem 'nested_form'
 
 
 
