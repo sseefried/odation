@@ -1,10 +1,10 @@
 Odation::Application.routes.draw do
-  resources :posts
+
 
   resources :authentications
-
-  get "subscribers/index"
-
+  get "posts/index"                   
+  resources :posts    
+  
   get "deals/index"
 
   get "fly/index"
@@ -12,20 +12,17 @@ Odation::Application.routes.draw do
   get "stay/index"
 
   get "home/index"
-
-  resources :temps
-
+                     
   get "places/index"
+  resources :places
                    
   match 'auth/:provider/callback' => 'authentications#create'
 
   devise_for :users, :controllers => { :registrations => 'registrations'}
 
   get "destinations/index"  
+                     
   
-  resources :products
-  
-  resources :places
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
