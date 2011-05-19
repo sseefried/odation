@@ -14,7 +14,7 @@ gem 'sass'
 gem 'devise'
 gem 'omniauth'
 gem 'nested_form'
-
+gem 'RedCloth'
                 
 gem 'formtastic'
 gem 'jquery-rails'

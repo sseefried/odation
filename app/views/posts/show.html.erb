@@ -1,11 +1,17 @@
+<h1><%= @post.title %></h1>  
+
 <%= social_helpers(@post.id, @post.title, @post.body) %>
-
+<br/>
 <% :notice %>
-<h2><%= @post.title %></h2>
-<p><%= @post.body %>
+
+<%= raw RedCloth.new(@post.body).to_html %> 
 
 
-<%=  link_to 'Edit', edit_post_path(@post) %>
+<% if(current_user) %>
+  <%=  link_to 'Edit', edit_post_path(@post) %>
+  <%= link_to 'Back', posts_path %>
+<% end %>
 
-<%= link_to 'Back', posts_path %>
-   <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://odation.com/posts/<%= @post.id %>" num_posts="4" width="660"></fb:comments>
+<h2>Comments</h2>
+
+<div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.id %>" num_posts="4" width="640"></fb:comments>

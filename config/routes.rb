@@ -2,6 +2,7 @@ Odation::Application.routes.draw do
 
 
   resources :authentications
+
   get "posts/index"                   
   resources :posts    
   
@@ -17,6 +18,8 @@ Odation::Application.routes.draw do
   resources :places
                    
   match 'auth/:provider/callback' => 'authentications#create'
+  
+
 
   devise_for :users, :controllers => { :registrations => 'registrations'}
 

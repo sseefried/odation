@@ -6,7 +6,7 @@ def social_helpers(id, title, body, type = "button")
       if (type == "button")
     html = ""
     html = <<HTML
-      <div class="social_header"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{id}" send="true"  layout="button_count" width="450" show_faces="false" font=""></fb:like></div>
+      <div class="social_header"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{id}" send="true"  layout="button_count" width="450" show_faces="false" font=""></fb:like><a href=" ">Send Email</a> <a href=" ">Tweet this</a></div>
 HTML
     html.html_safe                   
 
