@@ -11,7 +11,7 @@
     <%= social_helpers(post.id, post.title, post.body, "box") %>  
 
     <h2><%=  post.title %></h2>
-    <p><%= post.body %></p>
+    <p><%= raw RedCloth.new(@post.body).to_html %>  </p>
       <%= link_to 'Read More', post %>
     <% if (current_user) 
       if (current_user.email == "fighella@gmail.com") %>
