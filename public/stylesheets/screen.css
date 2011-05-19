@@ -93,42 +93,44 @@ a:hover { border: none; background: none; }
 #footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; background: #d9d9d9; min-height: 200px; }
 /* line 103, ../../app/stylesheets/screen.scss */
 #footer ul { float: left; width: 220px; margin: 10px 10px 20px 0; }
-
-/* line 108, ../../app/stylesheets/screen.scss */
-.leftCol { float: left; width: 660px; }
-
-/* line 109, ../../app/stylesheets/screen.scss */
-.rightCol { float: left; width: 300px; margin-left: 15px; }
-
-/* line 110, ../../app/stylesheets/screen.scss */
-h2 span { color: #ff9000; font-style: oblique; }
-
-/* line 112, ../../app/stylesheets/screen.scss */
-.clearfix { clear: both; line-height: 1; height: 1px; }
+/* line 107, ../../app/stylesheets/screen.scss */
+#footer ul li a { text-decoration: none; font-size: 12px; line-height: 18px; }
 
 /* line 114, ../../app/stylesheets/screen.scss */
-.authentications { margin-bottom: 30px; }
+.leftCol { float: left; width: 660px; }
+
+/* line 115, ../../app/stylesheets/screen.scss */
+.rightCol { float: left; width: 300px; margin-left: 15px; }
+
+/* line 116, ../../app/stylesheets/screen.scss */
+h2 span { color: #ff9000; font-style: oblique; }
 
 /* line 118, ../../app/stylesheets/screen.scss */
+.clearfix { clear: both; line-height: 1; height: 1px; }
+
+/* line 120, ../../app/stylesheets/screen.scss */
+.authentications { margin-bottom: 30px; }
+
+/* line 124, ../../app/stylesheets/screen.scss */
 .authentication { width: 130px; float: left; background-color: #EEE; border: solid 1px #999; padding: 5px 10px; -moz-border-radius: 8px; -webkit-border-radius: 8px; position: relative; margin-right: 10px; }
 
-/* line 130, ../../app/stylesheets/screen.scss */
+/* line 136, ../../app/stylesheets/screen.scss */
 .authentication .remove { text-decoration: none; position: absolute; top: 3px; right: 3px; color: #333; padding: 2px 4px; font-size: 10px; }
 
-/* line 140, ../../app/stylesheets/screen.scss */
+/* line 146, ../../app/stylesheets/screen.scss */
 .authentication .remove:hover { color: #CCC; background-color: #777; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
 
-/* line 147, ../../app/stylesheets/screen.scss */
+/* line 153, ../../app/stylesheets/screen.scss */
 .authentication img { float: left; margin-right: 10px; }
 
-/* line 152, ../../app/stylesheets/screen.scss */
+/* line 158, ../../app/stylesheets/screen.scss */
 .authentication .provider { font-weight: bold; }
 
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
 .authentication .uid { color: #666; font-size: 11px; }
 
-/* line 161, ../../app/stylesheets/screen.scss */
+/* line 167, ../../app/stylesheets/screen.scss */
 .auth_provider img { display: block; }
 
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 171, ../../app/stylesheets/screen.scss */
 .auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
