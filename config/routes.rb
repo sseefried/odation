@@ -1,5 +1,7 @@
 Odation::Application.routes.draw do
 
+  resource :twitter_account
+ 
 
   resources :authentications
 
@@ -7,13 +9,9 @@ Odation::Application.routes.draw do
   resources :posts    
   
   get "deals/index"
-
   get "fly/index"
-
   get "stay/index"
-
   get "home/index"
-                     
   get "places/index"
   resources :places
                    

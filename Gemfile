@@ -15,6 +15,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'nested_form'
 gem 'RedCloth'
+gem 'twitter'
+gem 'paperclip'
                 
 gem 'formtastic'
 gem 'jquery-rails'
