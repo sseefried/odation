@@ -18,6 +18,3 @@ open("http://odation.com/seed/cities.txt") do |destinations|
       Destination.create!(:cityid => cityid, :countryid => countryid, :regionid => regionid, :title => city, :latitude => latitude, :longitude => longitude, :timezone => timezone, :dmaid => dmaid, :code => code)
   end
 end
-
-User.delete_all
-User.create!(:email => "fighella@gmail.com", :password => "inyourface1")
