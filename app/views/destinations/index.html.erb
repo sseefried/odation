@@ -2,7 +2,7 @@
                                                               
 <h1>Accommodation Information</h1>
 
-<% @destinations.each.limit(1) do |destination| %>
+<% @destinations.each do |destination| %>
   <div style="position: relative; width: 660px; display: block;">
     <%= social_helpers(destination.id, destination.title, destination.description, "box") %>  
 
