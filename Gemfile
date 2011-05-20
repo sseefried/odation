@@ -1,4 +1,6 @@
 source 'http://rubygems.org'
+source 'http://gems.github.com'
+
 
 gem 'rails', '3.0.3'
 
@@ -23,6 +25,12 @@ gem 'jquery-rails'
 
 gem 'ancestry'
 gem 'acts_as_list'            
+ 
+group :after_initialize do
+  gem 'feedzirra'
+end
+  
+
 
 #analytics
 gem 'newrelic_rpm'

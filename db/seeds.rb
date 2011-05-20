@@ -4,4 +4,13 @@
 # Examples:
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+#   Mayor.create(:name => 'Daley', :city => cities.first) 
+
+
+Destination.delete_all
+open("/public/seed/cities.txt") do |destinations|
+  destinations.read.each_line do |destination|
+    cityid, countryid, regionid, city, latitude, longitude, timezone, dmaid, code = destination.chomp.split(",")
+      Destination.create!(:cityid => cityid, :countryid => countryid, :regionid => regionid, :city => title, :latitude => latitude, :longitude => longitude, :timezone => timezone, :dmaid => dmaid, :code => code)
+  end
+end
