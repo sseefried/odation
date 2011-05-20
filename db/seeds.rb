@@ -8,7 +8,7 @@
 #
 # Local Cities seed: /Users/fighella/Sites/odation/public/seed/cities.txt
 #
- 
+require 'open-uri'
 
 
 Destination.delete_all
