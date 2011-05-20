@@ -23,7 +23,14 @@ ActiveRecord::Schema.define(:version => 20110520065734) do
   create_table "destinations", :force => true do |t|
     t.string   "title"
     t.string   "description"
-    t.integer  "seo_meta"
+    t.integer  "cityid"
+    t.integer  "countryid"
+    t.integer  "regionid"
+    t.integer  "longitude"
+    t.integer  "latitude"
+    t.string   "timezone"
+    t.integer  "dmaid"
+    t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
