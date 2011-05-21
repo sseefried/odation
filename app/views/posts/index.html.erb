@@ -15,7 +15,9 @@
     </div><!-- .post_info -->
     <div class="post_links">
     
-    <%= link_to 'Read Post', post %> | Comments (<% @graph.get_object("http://odation.com/posts/#{post.permalink}") %>)</div>
+    <%= link_to 'Read Post', post %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.id}")["comments"] %>)</div>
+
+
   
   </div>
 <% end %>

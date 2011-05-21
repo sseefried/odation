@@ -6,11 +6,14 @@ class PostsController < ApplicationController
 def koala_graph
   @graph = Koala::Facebook::GraphAPI.new 
 end
+                                     
 
   # GET /posts
   # GET /posts.xml
   def index
     @posts = Post.all
+    
+                              
     
 
     
