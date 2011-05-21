@@ -139,3 +139,18 @@ h2 span { color: #ff9000; font-style: oblique; }
 
 /* line 175, ../../app/stylesheets/screen.scss */
 .auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
+
+/* line 183, ../../app/stylesheets/screen.scss */
+h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px; }
+
+/* line 184, ../../app/stylesheets/screen.scss */
+.mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px; }
+
+/* line 185, ../../app/stylesheets/screen.scss */
+.post_teaser { position: relative; width: 660px; display: block; padding-top: 10px; padding-bottom: 25px; margin-bottom: 5px; border-bottom: 1px dotted #ddd; }
+/* line 193, ../../app/stylesheets/screen.scss */
+.post_teaser .post_links { font-size: 12px; }
+/* line 197, ../../app/stylesheets/screen.scss */
+.post_teaser h2 { color: #174b7f; margin: 0; padding: 0; }
+/* line 198, ../../app/stylesheets/screen.scss */
+.post_teaser p { margin: 0 0 15px 0; padding: 0; }

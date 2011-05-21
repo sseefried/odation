@@ -1,29 +1,29 @@
 <% page_title("Latest Travel Stories from around the globe.") %>
 
-<% content_for :rightCol do %>
-  <% if (current_user) 
-    if (current_user.email == "fighella@gmail.com") %>
-    <%=  link_to 'New Post', new_post_path %>
-  <% end
-  end %> 
-<% end %>     
+<h1 class="mini-header"><span>All Posts</span></h1>
+
 
 <% @posts.each do |post| %>
-  <div style="position: relative; width: 660px; display: block;">
+  <div class="post_teaser">
     <%= social_helpers(post.id, post.title, post.body, "box") %>  
 
     <h2><%=  post.title %></h2>
     <p><%= raw RedCloth.new(post.body).to_html %>  </p>
-      <%= link_to 'Read More', post %>
-    <% if (current_user) 
-      if (current_user.email == "fighella@gmail.com") %>
-     
-      <%= link_to 'Edit', edit_post_path(post) %>
-      <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>      
-    <% end
-    end %>  
+    <div class="post_info">
+      
+    </div><!-- .post_info -->
+    <div class="post_links">
+    <%= link_to 'Read Post', post %> | Comments (A number)</div>
+  
   </div>
 <% end %>
 <br/>
+<%= admin_area do %>
+  <%=  link_to 'Add a New Post', new_post_path %>
+<% end %>
 
+
+<% content_for :rightCol do %>
+
+<% end %>     
 

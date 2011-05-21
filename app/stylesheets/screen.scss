@@ -178,4 +178,22 @@ h2 span { color: #ff9000; font-style: oblique;}
   margin-right: 20px;
   text-align: center;
   margin-bottom: 10px;
-}
+} 
+
+h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px;}
+.mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px}
+.post_teaser { 
+	position: relative; 
+	width: 660px; 
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #ddd;
+	.post_links {
+		font-size: 12px;
+		
+	}
+	h2 { color: #174b7f; margin: 0; padding: 0;}
+	p { margin: 0 0 15px 0; padding: 0;} 
+	}
