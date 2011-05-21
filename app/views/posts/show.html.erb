@@ -1,19 +1,30 @@
-<h1><%= @post.title %></h1>  
+<% page_title(@post.title + " - from Odation.com") %>
 
-<%= social_helpers(@post.id, @post.title, @post.body) %>
-<br/>
-<% :notice %>
-
-<%= raw RedCloth.new(@post.body).to_html %> 
-<a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
-
-<% if(current_user) %>
-  <%=  link_to 'Edit', edit_post_path(@post) %>
+<%= admin_area do  %>
+  <em>Article Admin</em> - 
+  <%= link_to 'Edit', edit_post_path(@post) %>
   <%= link_to 'Back', posts_path %>
-<% end %>
+  <%= link_to 'New', new_post_path %>
+  
+<% end %> 
 
-<h2>Comments</h2>
+<h1><%= @post.title %></h1>  
+<p>Author - Name / Linked to Author Profile -- <%= posted_at(@post.created_at) %></p>
+  <%= social_helpers(@post.id, @post.title, @post.body) %>
+  <br/>
+  
+  <% :notice %>
 
-<div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.id %>" num_posts="4" width="640"></fb:comments>
+  <%= raw RedCloth.new(@post.body).to_html %> 
+
+<p>The tags for this post</p>  
+  <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
+
+
+
+
+<h2 style="border-top: 1px solid #efefef; margin-top: 10px;">Comments</h2>
+
+<div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
 
 

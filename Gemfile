@@ -29,6 +29,8 @@ gem 'acts_as_list'
 group :after_initialize do
   gem 'feedzirra'
 end
+
+gem 'declarative_authorization'
   
 
 

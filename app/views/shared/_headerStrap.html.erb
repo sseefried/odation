@@ -1,20 +1,10 @@
 <div id="headerStrap">
   <%= link_to image_tag("logo.jpg", :title => "Try something different", :class => "logo"), root_url  %>
-
-
-
-<% if current_user %>
-
-<% else %>
-  <div id="sign_in">
-    <%= link_to 'Sign Up', authentications_url %>
-    <%= link_to 'Sign In', authentications_url %>
-  </div><!-- #sign_in -->
-<% end %>
   
-
+    <%= not_signed_in("sign_in") do %>
+      <%= link_to 'Sign Up', authentications_url %>
+      <%= link_to 'Sign In', authentications_url %>
+    <% end %>
   
-
-
 </div><!-- #topStrap -->   
 

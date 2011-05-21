@@ -121,6 +121,10 @@ h2 span { color: #ff9000; font-style: oblique;}
   margin-bottom: 30px;
 }
 
+.admin { padding: 10px; background: #def; border: 1px solid #666; font-size: 12px; text-transform: uppercase;
+	a { color: #006a98; font-size: 12px; margin: 0 8px 0 0; line-height: 16px; }
+	}
+
 .authentication {
   width: 130px;
   float: left;

@@ -1,0 +1,9 @@
+<h2>Latest Travel Posts</h2>
+<% @posts.each do |post|  %>
+  <ul>
+    <li>
+      <h4><%= post.title %></h4>
+      <p>Some text</p>
+    </li>
+  </ul>
+<% end %>
