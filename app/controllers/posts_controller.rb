@@ -1,16 +1,19 @@
 class PostsController < ApplicationController
-require 'koala'  
+  #require koala
 
-  
+ before_filter :koala_graph
+
+def koala_graph
+  @graph = Koala::Facebook::GraphAPI.new 
+end
+
   # GET /posts
   # GET /posts.xml
   def index
     @posts = Post.all
-
     
 
-    graph = Koala::Facebook::GraphAPI.new
-    @friends = graph.get_object("7204941866_117111188317384")
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
