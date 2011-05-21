@@ -5,7 +5,7 @@
 
 <% @posts.each do |post| %>
   <div class="post_teaser">
-    <%= social_helpers(post.id, post.title, post.body, "box") %>  
+    <%= social_helpers(post.permalink, post.title, post.body, "box") %>  
 
     <h2><%= link_to post.title, post_path(post) %></h2>
     
