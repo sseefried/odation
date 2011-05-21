@@ -7,7 +7,7 @@
   <div class="post_teaser">
     <%= social_helpers(post.id, post.title, post.body, "box") %>  
 
-    <h2><%=  post.title %></h2>
+    <h2><%= link_to post.title, post_path(post) %></h2>
     
     <p><%= raw RedCloth.new(post.body).to_html %>  </p>
     <div class="post_info">
@@ -15,7 +15,7 @@
     </div><!-- .post_info -->
     <div class="post_links">
     
-    <%= link_to 'Read Post', post %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.id}")["comments"] %>)</div>
+    <%= link_to 'Read Post', post %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.permalink}")["comments"] %>)</div>
 
 
   

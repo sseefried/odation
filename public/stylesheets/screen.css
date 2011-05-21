@@ -155,7 +155,7 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 /* line 198, ../../app/stylesheets/screen.scss */
 .post_teaser #fb-root { position: absolute; bottom: 0; left: 0; }
 /* line 199, ../../app/stylesheets/screen.scss */
-.post_teaser h2 { color: #174b7f; margin: 0; padding: 0; }
+.post_teaser h2 a { color: #174b7f; margin: 0; padding: 0; text-decoration: none; }
 /* line 200, ../../app/stylesheets/screen.scss */
 .post_teaser p { margin: 0 0 15px 0; padding: 0; }
 
