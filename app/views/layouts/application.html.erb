@@ -89,8 +89,9 @@
           <div style="clear: both;"></div>
           
           <%= yield :rightCol %>  
-        
-          <div id="recent_episodes">
+          
+          
+         <!--  <div id="recent_episodes">
             <h3>Recent Railscasts Episodes</h3>
             <ul>
               <% for entry in FeedEntry.all(:limit => 10, :order => "published_at desc") %>
@@ -99,7 +100,7 @@
                 </li>
               <% end %>
             </ul>
-          </div>
+          </div> -->
           
           <%= google_ads do %>
             <% render 'shared/google_ads' %>
