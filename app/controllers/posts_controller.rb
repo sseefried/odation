@@ -1,21 +1,16 @@
 class PostsController < ApplicationController
-  
+require 'koala'  
 
   
   # GET /posts
   # GET /posts.xml
   def index
     @posts = Post.all
-    @oauth = Koala::Facebook::OAuth.new(api_id, app_secret)
-    @oauth.get_user_info_from_cookies(cookies)
-    # => {"session_key"=>"2.U25mFtixF8Pqth45AtnsBQ__.3600.1272909600-2905623", 
-    # "expires"=>"1272909600", "uid"=>"2905623", "sig"=>"a76960c0c3669470f7ca53b53e034ac4",
-    # "secret"=>"QR_id58vqV_qW7MnfJlmLw__",  "access_token"=>"190889632882|2.U25mFtixF8Pqth45AtnsBQ__.
-    # 3600.1272909600-2905623|DNjswq9Q-fKDrP60TY76Tv8GxCc."
-    # if you just want the user:
-    @oauth.get_user_from_cookies(cookies)
+
+    
+
     graph = Koala::Facebook::GraphAPI.new
-    @friends = graph.get_object("34523452345")
+    @friends = graph.get_object("7204941866_117111188317384")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
