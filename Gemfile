@@ -15,6 +15,8 @@ gem 'sass'
 
 gem 'devise'
 gem 'omniauth'
+gem 'koala'
+
 gem 'nested_form'
 gem 'RedCloth'
 gem 'twitter'

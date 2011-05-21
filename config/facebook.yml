@@ -1,0 +1,10 @@
+ # config/facebook.yml
+development:
+  app_id: '109302305823116'
+  secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'
+test:
+  app_id: '109302305823116'
+  secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'
+production:
+  app_id: '109302305823116'
+  secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'

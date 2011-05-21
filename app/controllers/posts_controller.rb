@@ -6,7 +6,8 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.all
-
+    graph = Koala::Facebook::GraphAPI.new
+    @friends = graph.get_connections("me", "friends")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @posts }
