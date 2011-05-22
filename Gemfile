@@ -9,22 +9,33 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+# Interface
+gem 'jquery-rails'
 gem 'compass'
 gem 'haml-rails'
 gem 'sass'
 
+
+# Authorisation
 gem 'devise'
 gem 'omniauth'
+
+# Facebook & Twitter and all that.
 gem 'koala'
-
-gem 'nested_form'
-gem 'RedCloth'
 gem 'twitter'
-gem 'paperclip'
-                
-gem 'formtastic'
-gem 'jquery-rails'
 
+# Markup for post content
+gem 'RedCloth'
+
+# Image Processing
+gem 'carrierwave'
+gem 'rmagick'
+
+#Forms                
+gem 'formtastic'
+gem 'nested_form'
+
+          
 gem 'ancestry'
 gem 'acts_as_list'            
  

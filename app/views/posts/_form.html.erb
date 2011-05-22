@@ -1,7 +1,12 @@
-<%= semantic_form_for @post do |f| %>
+<%= form_for @post, :html => { :multipart => true } do |f| %>
 
-  <%= f.inputs %>
-  <%= f.buttons  %>
+  <%= f.text_field :title %>
+  <%= f.text_field :body %>
+  <%= f.text_field :permalink %>
+  <%= f.file_field :image %>
+  <%= f.label :remote_image_url, "or image URL" %><br />
+  <%= f.text_field :remote_image_url %>
+  <%= f.submit  %>
  
 <% end %>
            

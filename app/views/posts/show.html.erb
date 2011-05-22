@@ -14,8 +14,8 @@
   <br/>
   
   <% :notice %>
-
-  <%= raw RedCloth.new(@post.body).to_html %> 
+   <%= image_tag @post.image_url(:thumb) if @post.image? %>
+  <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
 
 <p>The tags for this post</p>  
   <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>

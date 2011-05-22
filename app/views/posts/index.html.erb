@@ -9,13 +9,13 @@
 
     <h2><%= link_to post.title, post_path(post) %></h2>
     
-    <p><%= raw RedCloth.new(post.body).to_html %>  </p>
+    <p><%= raw RedCloth.new(post.body).to_html if post.body? %>  </p>
     <div class="post_info">
       <p>Author - Name / Linked to Author Profile -- <%= posted_at(post.created_at) %></p>  
     </div><!-- .post_info -->
     <div class="post_links">
     
-    <%= link_to 'Read Post', post %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.permalink}")["comments"] %>)</div>
+    <%= link_to 'Read Post', post_path(post) %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.permalink}")["comments"] %>)</div>
 
 
   
