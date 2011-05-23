@@ -30,6 +30,7 @@ gem 'RedCloth'
 # Image Processing
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog'
 
 #Forms                
 gem 'formtastic'
