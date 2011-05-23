@@ -19,7 +19,7 @@ end
   end
 
   def admin_area(id = "", &block)
-    content_tag(:div, :class => "admin", :id => id,  &block) if is_admin
+    content_tag(:div, :class => "admin", :id => id,  &block) if is_admin    
   end
 
   def signed_in(id = "", &block)
@@ -31,7 +31,7 @@ end
   end
   
   def is_admin
-    if (current_user) && (current_user.id == 2)
+    unless (current_user) && (current_user.id == 2)
       is_admin = true
     end
   end
@@ -39,12 +39,21 @@ end
   def posted_at(post_created_at)
     too_long_ago = Time.now - 120.minutes
     if (post_created_at > too_long_ago)
-      posted_at = "Posted " + time_ago_in_words(post_created_at) + " ago"
+      posted_at = " " + time_ago_in_words(post_created_at) + " ago"
     else
-      posted_at = "Posted " + post_created_at.to_s(:month)
+      posted_at = " " + post_created_at.to_formatted_s(:short) 
     end
   end  
 
-
+  def shorten (string, count = 30)
+  	if string.length >= count 
+  		shortened = string[0, count]
+  		splitted = shortened.split(/\s/)
+  		words = splitted.length
+  		splitted[0, words-1].join(" ") + ' ...'
+  	else 
+  		string
+  	end
+  end
 
 end

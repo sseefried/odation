@@ -3,11 +3,13 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+$primaryborders : #efefef; 
+
 @import "compass/reset";
 
 // Colors 
 
-$primaryborders : #efefef;
+
 
 body {font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
@@ -19,12 +21,47 @@ a:hover { border: none; background: none;}
  
 
 
-.loginStrap { background: #34c15c; color: #fff; text-shadow: #666 1px 1px 1px; padding: 5px 0; border-bottom: 1px solid #fff; font-weight: bold; line-height: 40px; 
-	img { margin: 0 5px -6px;
-		}
-		a.hide { position: absolute; top: 3px; right: 3px; padding-left:25px; background: url(/images/close_icon.jpg) center left no-repeat; font-size: 12px; font-weight: normal; text-decoration: none; color: #fff;text-shadow: none; }
+.loginStrap { 
+	background: #34c15c; 
+	color: #fff; 
+	text-shadow: #666 1px 1px 1px; 
+	padding: 5px 0; 
+	border-bottom: 1px solid #fff; 
+	font-weight: bold; 
+	line-height: 40px; 
+	img { 
+		margin: 0 5px -6px;
+	} 
+	a { 
+		text-decoration: none;
 	}
-.page { background: url(/images/top_strap.jpg) top repeat-x}
+	a.hide { 
+		position: absolute; 
+		top: 2px; 
+		right: 3px; 
+		padding-left:25px; 
+		background: url(/images/close_icon.jpg) center left no-repeat; 
+		font-size: 12px; 
+		font-weight: normal; 
+		text-decoration: none; 
+		color: #fff;
+		text-shadow: none; 
+	}
+}
+	
+.page { 
+	background: url(/images/top_strap.jpg) top repeat-x;
+}
+
+.pageWrapper { 
+	width: 980px; 
+	margin: 0 auto;
+	position: relative;
+}
+
+#body { 
+	min-height: 500px;
+	}
 
 .block {
 	h2 { font-size: 22px; } 
@@ -41,14 +78,9 @@ a:hover { border: none; background: none;}
 		font-size: 11px; }
 }
 
-.pageWrapper { 
-	width: 980px; 
-	margin: 0 auto;
-	position: relative;
-	} 
+
 
 #header { 
-
 	padding: 6px 0;
 	margin: 0 0 10px 0;
 	#headerStrap {
@@ -90,9 +122,7 @@ a:hover { border: none; background: none;}
 	
 	}
 
-#body { 
-	min-height: 500px;
-	}
+
 
 #footer { 
 	border-top: 1px solid $primaryborders;
@@ -117,87 +147,6 @@ h2 span { color: #ff9000; font-style: oblique;}
 	
 .clearfix { clear: both; line-height: 1; height: 1px;}  
 
-.authentications {
-  margin-bottom: 30px;
-}
+@import "admin";
 
-.admin { padding: 10px; background: #def; border: 1px solid #666; font-size: 12px; text-transform: uppercase;
-	a { color: #006a98; font-size: 12px; margin: 0 8px 0 0; line-height: 16px; }
-	}
-
-.authentication {
-  width: 130px;
-  float: left;
-  background-color: #EEE;
-  border: solid 1px #999;
-  padding: 5px 10px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  position: relative;
-  margin-right: 10px;
-}
-
-.authentication .remove {
-  text-decoration: none;
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  color: #333;
-  padding: 2px 4px;
-  font-size: 10px;
-}
-
-.authentication .remove:hover {
-  color: #CCC;
-  background-color: #777;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-
-.authentication img {
-  float: left;
-  margin-right: 10px;
-}
-
-.authentication .provider {
-  font-weight: bold;
-}
-
-.authentication .uid {
-  color: #666;
-  font-size: 11px;
-}
-
-.auth_provider img {
-  display: block;
-}
-
-.auth_provider {
-  float: left;
-  text-decoration: none;
-  margin-right: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-} 
-
-h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px;}
-.mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px}
-.post_teaser { 
-	position: relative; 
-	width: 660px; 
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 25px;
-	margin-bottom: 5px;
-	border-bottom: 1px dotted #ddd;
-	.post_links {
-		font-size: 12px;
-		
-	}
-	.twitter-share-button { position: absolute; top: -1px; right: 0}
-	#fb-root { position: absolute; bottom: 0; left: 0; }
-	h2 a { color: #174b7f; margin: 0; padding: 0; text-decoration: none;}
-	p { margin: 0 0 15px 0; padding: 0;} 
-	}
-	                       
-.teaser_social_helper { position: absolute; top: 15px; right: 15px;width: 115px;}
+@import "posts";

@@ -25,139 +25,153 @@ a img { border: none; }
 /* line 115, ../../../../.rvm/gems/ruby-1.9.2-rc2@rails3tutorial/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/* line 12, ../../app/stylesheets/screen.scss */
+/* line 14, ../../app/stylesheets/screen.scss */
 body { font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
-/* line 14, ../../app/stylesheets/screen.scss */
+/* line 16, ../../app/stylesheets/screen.scss */
 h1, h2, h3 { font-weight: bold; }
 
-/* line 15, ../../app/stylesheets/screen.scss */
+/* line 17, ../../app/stylesheets/screen.scss */
 h1 { font-size: 24px; line-height: 46px; color: #2871b4; }
 
-/* line 16, ../../app/stylesheets/screen.scss */
+/* line 18, ../../app/stylesheets/screen.scss */
 h2 { font-size: 18px; line-height: 36px; }
 
-/* line 17, ../../app/stylesheets/screen.scss */
+/* line 19, ../../app/stylesheets/screen.scss */
 p { color: #666; padding-bottom: 26px; line-height: 22px; font-size: 12px; }
 
-/* line 18, ../../app/stylesheets/screen.scss */
+/* line 20, ../../app/stylesheets/screen.scss */
 a:hover { border: none; background: none; }
 
-/* line 22, ../../app/stylesheets/screen.scss */
+/* line 24, ../../app/stylesheets/screen.scss */
 .loginStrap { background: #34c15c; color: #fff; text-shadow: #666 1px 1px 1px; padding: 5px 0; border-bottom: 1px solid #fff; font-weight: bold; line-height: 40px; }
-/* line 23, ../../app/stylesheets/screen.scss */
+/* line 32, ../../app/stylesheets/screen.scss */
 .loginStrap img { margin: 0 5px -6px; }
-/* line 25, ../../app/stylesheets/screen.scss */
-.loginStrap a.hide { position: absolute; top: 3px; right: 3px; padding-left: 25px; background: url(/images/close_icon.jpg) center left no-repeat; font-size: 12px; font-weight: normal; text-decoration: none; color: #fff; text-shadow: none; }
+/* line 35, ../../app/stylesheets/screen.scss */
+.loginStrap a { text-decoration: none; }
+/* line 38, ../../app/stylesheets/screen.scss */
+.loginStrap a.hide { position: absolute; top: 2px; right: 3px; padding-left: 25px; background: url(/images/close_icon.jpg) center left no-repeat; font-size: 12px; font-weight: normal; text-decoration: none; color: #fff; text-shadow: none; }
 
-/* line 27, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/screen.scss */
 .page { background: url(/images/top_strap.jpg) top repeat-x; }
 
-/* line 29, ../../app/stylesheets/screen.scss */
-.block { background: #efefef; padding: 10px; margin-bottom: 10px; }
-/* line 30, ../../app/stylesheets/screen.scss */
-.block h2 { font-size: 22px; }
-/* line 34, ../../app/stylesheets/screen.scss */
-.block .blockContent { border: 1px solid #ccc; padding: 20px; background: #fff; }
-/* line 39, ../../app/stylesheets/screen.scss */
-.block label { text-transform: uppercase; font-size: 11px; }
-
-/* line 44, ../../app/stylesheets/screen.scss */
+/* line 56, ../../app/stylesheets/screen.scss */
 .pageWrapper { width: 980px; margin: 0 auto; position: relative; }
 
-/* line 50, ../../app/stylesheets/screen.scss */
-#header { padding: 6px 0; margin: 0 0 10px 0; }
-/* line 54, ../../app/stylesheets/screen.scss */
-#header #headerStrap { height: 73px; }
-/* line 58, ../../app/stylesheets/screen.scss */
-#header #navStrap { height: 43px; }
-/* line 60, ../../app/stylesheets/screen.scss */
-#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
-/* line 61, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li { float: left; }
 /* line 62, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
-/* line 67, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a:hover { color: #ccc; }
-/* line 68, ../../app/stylesheets/screen.scss */
-#header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
-/* line 77, ../../app/stylesheets/screen.scss */
-#header #sign_in { position: absolute; top: 18px; right: 0px; height: 38px; width: 200px; background: url(/images/sign_in.jpg) center center no-repeat; }
-/* line 84, ../../app/stylesheets/screen.scss */
-#header #sign_in a { color: #bbb; text-decoration: none; padding: 10px 0px 10px 30px; line-height: 38px; }
-
-/* line 93, ../../app/stylesheets/screen.scss */
 #body { min-height: 500px; }
 
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 66, ../../app/stylesheets/screen.scss */
+.block { background: #efefef; padding: 10px; margin-bottom: 10px; }
+/* line 67, ../../app/stylesheets/screen.scss */
+.block h2 { font-size: 22px; }
+/* line 71, ../../app/stylesheets/screen.scss */
+.block .blockContent { border: 1px solid #ccc; padding: 20px; background: #fff; }
+/* line 76, ../../app/stylesheets/screen.scss */
+.block label { text-transform: uppercase; font-size: 11px; }
+
+/* line 83, ../../app/stylesheets/screen.scss */
+#header { padding: 6px 0; margin: 0 0 10px 0; }
+/* line 86, ../../app/stylesheets/screen.scss */
+#header #headerStrap { height: 73px; }
+/* line 90, ../../app/stylesheets/screen.scss */
+#header #navStrap { height: 43px; }
+/* line 92, ../../app/stylesheets/screen.scss */
+#header #navStrap ul, #header #navStrap li { list-style: none; display: block; }
+/* line 93, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li { float: left; }
+/* line 94, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a { line-height: 44px; height: 44px; padding: 15px 30px; text-decoration: none; text-transform: uppercase; color: #333; font-weight: bold; }
+/* line 99, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a:hover { color: #ccc; }
+/* line 100, ../../app/stylesheets/screen.scss */
+#header #navStrap ul li a.selected { background: url(/images/nav_select.jpg) top repeat-x; color: #333; }
+/* line 109, ../../app/stylesheets/screen.scss */
+#header #sign_in { position: absolute; top: 18px; right: 0px; height: 38px; width: 200px; background: url(/images/sign_in.jpg) center center no-repeat; }
+/* line 116, ../../app/stylesheets/screen.scss */
+#header #sign_in a { color: #bbb; text-decoration: none; padding: 10px 0px 10px 30px; line-height: 38px; }
+
+/* line 127, ../../app/stylesheets/screen.scss */
 #footer { border-top: 1px solid #efefef; padding: 10px 0; margin: 10px 0 0 0; background: #d9d9d9; min-height: 200px; }
-/* line 103, ../../app/stylesheets/screen.scss */
+/* line 133, ../../app/stylesheets/screen.scss */
 #footer ul { float: left; width: 220px; margin: 10px 10px 20px 0; }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 137, ../../app/stylesheets/screen.scss */
 #footer ul li a { text-decoration: none; font-size: 12px; line-height: 18px; }
 
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 .leftCol { float: left; width: 660px; }
 
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 145, ../../app/stylesheets/screen.scss */
 .rightCol { float: left; width: 300px; margin-left: 15px; }
 
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 146, ../../app/stylesheets/screen.scss */
 h2 span { color: #ff9000; font-style: oblique; }
 
-/* line 118, ../../app/stylesheets/screen.scss */
+/* line 148, ../../app/stylesheets/screen.scss */
 .clearfix { clear: both; line-height: 1; height: 1px; }
 
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 1, ../../app/stylesheets/admin.scss */
 .authentications { margin-bottom: 30px; }
 
-/* line 124, ../../app/stylesheets/screen.scss */
+/* line 5, ../../app/stylesheets/admin.scss */
 .admin { padding: 10px; background: #def; border: 1px solid #666; font-size: 12px; text-transform: uppercase; }
-/* line 125, ../../app/stylesheets/screen.scss */
+/* line 6, ../../app/stylesheets/admin.scss */
 .admin a { color: #006a98; font-size: 12px; margin: 0 8px 0 0; line-height: 16px; }
 
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 9, ../../app/stylesheets/admin.scss */
 .authentication { width: 130px; float: left; background-color: #EEE; border: solid 1px #999; padding: 5px 10px; -moz-border-radius: 8px; -webkit-border-radius: 8px; position: relative; margin-right: 10px; }
 
-/* line 140, ../../app/stylesheets/screen.scss */
+/* line 21, ../../app/stylesheets/admin.scss */
 .authentication .remove { text-decoration: none; position: absolute; top: 3px; right: 3px; color: #333; padding: 2px 4px; font-size: 10px; }
 
-/* line 150, ../../app/stylesheets/screen.scss */
+/* line 31, ../../app/stylesheets/admin.scss */
 .authentication .remove:hover { color: #CCC; background-color: #777; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
 
-/* line 157, ../../app/stylesheets/screen.scss */
+/* line 38, ../../app/stylesheets/admin.scss */
 .authentication img { float: left; margin-right: 10px; }
 
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 43, ../../app/stylesheets/admin.scss */
 .authentication .provider { font-weight: bold; }
 
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 47, ../../app/stylesheets/admin.scss */
 .authentication .uid { color: #666; font-size: 11px; }
 
-/* line 171, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/admin.scss */
 .auth_provider img { display: block; }
 
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 56, ../../app/stylesheets/admin.scss */
 .auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
 
-/* line 183, ../../app/stylesheets/screen.scss */
+/** POSTS **/
+/* line 2, ../../app/stylesheets/posts.scss */
 h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px; }
 
-/* line 184, ../../app/stylesheets/screen.scss */
+/* line 4, ../../app/stylesheets/posts.scss */
 .mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px; }
 
-/* line 185, ../../app/stylesheets/screen.scss */
-.post_teaser { position: relative; width: 660px; display: block; padding-top: 10px; padding-bottom: 25px; margin-bottom: 5px; border-bottom: 1px dotted #ddd; }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 6, ../../app/stylesheets/posts.scss */
+.post_teaser { position: relative; background: #fff; width: 660px; display: block; border-bottom: 1px dotted #ddd; padding-top: 14px; padding-bottom: 3px; margin-bottom: 1px; }
+/* line 17, ../../app/stylesheets/posts.scss */
+.post_teaser h2 a { color: #174b7f; margin: 0; padding: 0; text-decoration: none; font-size: 20px; line-height: 26px; }
+/* line 25, ../../app/stylesheets/posts.scss */
+.post_teaser p { margin: 8px 0 15px 0; padding: 0; line-height: 22px; width: 340px; }
+/* line 31, ../../app/stylesheets/posts.scss */
+.post_teaser p span { color: red; font-size: 11px; text-transform: uppercase; font-weight: bold; }
+/* line 33, ../../app/stylesheets/posts.scss */
 .post_teaser .post_links { font-size: 12px; }
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 36, ../../app/stylesheets/posts.scss */
+.post_teaser img { position: absolute; top: 18px; right: 491px; }
+/* line 41, ../../app/stylesheets/posts.scss */
+.post_teaser .content { margin-left: 180px; min-height: 100px; position: relative; }
+/* line 46, ../../app/stylesheets/posts.scss */
+.post_teaser .post_description { position: relative; }
+/* line 50, ../../app/stylesheets/posts.scss */
 .post_teaser .twitter-share-button { position: absolute; top: -1px; right: 0; }
-/* line 198, ../../app/stylesheets/screen.scss */
+/* line 51, ../../app/stylesheets/posts.scss */
 .post_teaser #fb-root { position: absolute; bottom: 0; left: 0; }
-/* line 199, ../../app/stylesheets/screen.scss */
-.post_teaser h2 a { color: #174b7f; margin: 0; padding: 0; text-decoration: none; }
-/* line 200, ../../app/stylesheets/screen.scss */
-.post_teaser p { margin: 0 0 15px 0; padding: 0; }
 
-/* line 203, ../../app/stylesheets/screen.scss */
-.teaser_social_helper { position: absolute; top: 15px; right: 15px; width: 115px; }
+/* line 54, ../../app/stylesheets/posts.scss */
+.with_image { margin-left: 250px; }
+
+/* line 56, ../../app/stylesheets/posts.scss */
+.teaser_social_helper { position: absolute; top: 0px; right: 15px; width: 115px; }

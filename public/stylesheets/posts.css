@@ -1,0 +1,33 @@
+/** POSTS **/
+/* line 2, ../../app/stylesheets/posts.scss */
+h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px; }
+
+/* line 4, ../../app/stylesheets/posts.scss */
+.mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px; }
+
+/* line 6, ../../app/stylesheets/posts.scss */
+.post_teaser { position: relative; background: #fff; width: 660px; display: block; border-bottom: 1px dotted #ddd; padding-top: 14px; padding-bottom: 3px; margin-bottom: 1px; }
+/* line 17, ../../app/stylesheets/posts.scss */
+.post_teaser h2 a { color: #174b7f; margin: 0; padding: 0; text-decoration: none; font-size: 20px; line-height: 26px; }
+/* line 25, ../../app/stylesheets/posts.scss */
+.post_teaser p { margin: 8px 0 15px 0; padding: 0; line-height: 22px; width: 340px; }
+/* line 31, ../../app/stylesheets/posts.scss */
+.post_teaser p span { color: red; font-size: 11px; text-transform: uppercase; font-weight: bold; }
+/* line 33, ../../app/stylesheets/posts.scss */
+.post_teaser .post_links { font-size: 12px; }
+/* line 36, ../../app/stylesheets/posts.scss */
+.post_teaser img { position: absolute; top: 18px; right: 491px; }
+/* line 41, ../../app/stylesheets/posts.scss */
+.post_teaser .content { margin-left: 180px; min-height: 100px; position: relative; }
+/* line 46, ../../app/stylesheets/posts.scss */
+.post_teaser .post_description { position: relative; }
+/* line 50, ../../app/stylesheets/posts.scss */
+.post_teaser .twitter-share-button { position: absolute; top: -1px; right: 0; }
+/* line 51, ../../app/stylesheets/posts.scss */
+.post_teaser #fb-root { position: absolute; bottom: 0; left: 0; }
+
+/* line 54, ../../app/stylesheets/posts.scss */
+.with_image { margin-left: 250px; }
+
+/* line 56, ../../app/stylesheets/posts.scss */
+.teaser_social_helper { position: absolute; top: 0px; right: 15px; width: 115px; }

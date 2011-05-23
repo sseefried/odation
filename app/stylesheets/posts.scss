@@ -1,0 +1,56 @@
+/** POSTS **/
+h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px;}
+
+.mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px}
+
+.post_teaser { 
+	position: relative;
+	background: #fff; 
+	width: 660px; 
+	display: block;
+	border-bottom: 1px dotted #ddd;
+ 	padding-top: 14px;
+
+	
+	padding-bottom: 3px;
+	margin-bottom: 1px;
+	h2 a { 
+		color: #174b7f; 
+		margin: 0; 
+		padding: 0; 
+		text-decoration: none; 
+		font-size: 20px; 
+		line-height: 26px;
+	}
+	p { 
+		margin: 8px 0 15px 0; 
+		padding: 0; 
+		line-height: 22px;
+		width: 340px;
+	}
+	p span  {color: red; font-size: 11px; text-transform: uppercase; font-weight: bold;} 
+	
+	.post_links {
+		font-size: 12px;
+	}
+	img { 
+		position: absolute; 
+		top: 18px; 
+		right: 491px;
+}
+	.content { 
+		margin-left:180px; 
+		min-height: 100px;
+		position: relative;
+	}
+	.post_description {
+		position: relative;
+	} 
+	
+	.twitter-share-button { position: absolute; top: -1px; right: 0}
+	#fb-root { position: absolute; bottom: 0; left: 0; }
+	}
+	
+.with_image { margin-left: 250px;}	                       
+
+.teaser_social_helper { position: absolute; top: 0px; right: 15px;width: 115px;}

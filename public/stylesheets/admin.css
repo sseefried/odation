@@ -1,0 +1,31 @@
+/* line 1, ../../app/stylesheets/admin.scss */
+.authentications { margin-bottom: 30px; }
+
+/* line 5, ../../app/stylesheets/admin.scss */
+.admin { padding: 10px; background: #def; border: 1px solid #666; font-size: 12px; text-transform: uppercase; }
+/* line 6, ../../app/stylesheets/admin.scss */
+.admin a { color: #006a98; font-size: 12px; margin: 0 8px 0 0; line-height: 16px; }
+
+/* line 9, ../../app/stylesheets/admin.scss */
+.authentication { width: 130px; float: left; background-color: #EEE; border: solid 1px #999; padding: 5px 10px; -moz-border-radius: 8px; -webkit-border-radius: 8px; position: relative; margin-right: 10px; }
+
+/* line 21, ../../app/stylesheets/admin.scss */
+.authentication .remove { text-decoration: none; position: absolute; top: 3px; right: 3px; color: #333; padding: 2px 4px; font-size: 10px; }
+
+/* line 31, ../../app/stylesheets/admin.scss */
+.authentication .remove:hover { color: #CCC; background-color: #777; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+
+/* line 38, ../../app/stylesheets/admin.scss */
+.authentication img { float: left; margin-right: 10px; }
+
+/* line 43, ../../app/stylesheets/admin.scss */
+.authentication .provider { font-weight: bold; }
+
+/* line 47, ../../app/stylesheets/admin.scss */
+.authentication .uid { color: #666; font-size: 11px; }
+
+/* line 52, ../../app/stylesheets/admin.scss */
+.auth_provider img { display: block; }
+
+/* line 56, ../../app/stylesheets/admin.scss */
+.auth_provider { float: left; text-decoration: none; margin-right: 20px; text-align: center; margin-bottom: 10px; }
