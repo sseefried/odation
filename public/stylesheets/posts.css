@@ -1,4 +1,4 @@
-/** POSTS **/
+/** POSTS TEASERS **/
 /* line 2, ../../app/stylesheets/posts.scss */
 h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px; }
 
@@ -31,3 +31,17 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 
 /* line 56, ../../app/stylesheets/posts.scss */
 .teaser_social_helper { position: absolute; top: 0px; right: 15px; width: 115px; }
+
+/** POSTS FULL **/
+/* line 60, ../../app/stylesheets/posts.scss */
+.post { background: url(/images/temp_posst_back.jpg) top left no-repeat; }
+/* line 62, ../../app/stylesheets/posts.scss */
+.post h1 { font-size: 28px; line-height: 60px; }
+/* line 63, ../../app/stylesheets/posts.scss */
+.post .post_author { margin-bottom: 5px; line-height: 50px; }
+/* line 66, ../../app/stylesheets/posts.scss */
+.post .post_author img { float: left; margin-right: 12px; }
+/* line 70, ../../app/stylesheets/posts.scss */
+.post .post_posted { font-size: 11px; margin: 0; padding: 0; }
+/* line 71, ../../app/stylesheets/posts.scss */
+.post .post_content { padding-top: 15px; border-top: 2px solid #666; }

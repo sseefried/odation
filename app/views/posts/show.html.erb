@@ -1,30 +1,50 @@
 <% page_title(@post.title + " - from Odation.com") %>
 
+<% :notice %>  
+     
+     
+<div class="post">
+  <div class="post_author">
+    <img src="/" style="background: #def; width: 50px; height: 50px;">
+    <h3>Author - Name / Linked to Author Profile </h3>
+  </div><!-- .author_block -->
+  
+
+  <h1><%= @post.title %></h1>  
+  
+  <p class="post_posted">Posted: <%= posted_at(@post.created_at) %></p>
+  
+  <div class="post_content">
+ 
+ 
+       <%= image_tag @post.image_url(:thumb) if @post.image? %>
+      <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
+
+    <p>The tags for this post</p>  
+      <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
+
+
+
+
+   
+  </div><!-- .post_content -->
+    
+    <br/>
+
+</div><!-- .post -->
+<div class="post_comments">
+  <h2 style="border-top: 1px solid #efefef; margin-top: 10px;">Comments</h2>
+
+  <div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
+  
+</div><!-- .post_comments --> 
 <%= admin_area do  %>
   <em>Article Admin</em> - 
   <%= link_to 'Edit', edit_post_path(@post) %>
   <%= link_to 'Back', posts_path %>
   <%= link_to 'New', new_post_path %>
-  
-<% end %> 
 
-<h1><%= @post.title %></h1>  
-<p>Author - Name / Linked to Author Profile -- <%= posted_at(@post.created_at) %></p>
-  <%= social_helpers(@post.id, @post.title, @post.body) %>
-  <br/>
-  
-  <% :notice %>
-   <%= image_tag @post.image_url(:thumb) if @post.image? %>
-  <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
-
-<p>The tags for this post</p>  
-  <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
+<% end %>
 
 
-
-
-<h2 style="border-top: 1px solid #efefef; margin-top: 10px;">Comments</h2>
-
-<div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
-
-
+   <%= social_helpers(@post.id, @post.title, @post.body) %> 

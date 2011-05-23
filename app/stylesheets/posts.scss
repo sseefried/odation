@@ -1,4 +1,4 @@
-/** POSTS **/
+/** POSTS TEASERS **/
 h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; background: #efefef; padding: 0px; line-height: 12px;}
 
 .mini-header span { background: #fff; padding-left: 10px; line-height: 12px; margin: 0; padding: 1px 6px 2px 1px}
@@ -54,3 +54,22 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 .with_image { margin-left: 250px;}	                       
 
 .teaser_social_helper { position: absolute; top: 0px; right: 15px;width: 115px;}
+
+/** POSTS FULL **/
+
+.post { 
+	background: url(/images/temp_posst_back.jpg) top left no-repeat; 
+	h1 { font-size: 28px; line-height: 60px;}
+	.post_author { 
+		margin-bottom: 5px;
+		line-height: 50px;
+		img { 
+			float: left; 
+			margin-right: 12px;}
+		}
+		.post_posted { font-size: 11px; margin: 0; padding: 0;}
+	  .post_content {
+		padding-top: 15px; 
+		border-top: 2px solid #666;
+		}
+	}
