@@ -1,12 +1,12 @@
 <h2>Latest Travel Posts</h2>
 <ul class="small_teaser">
   
-<% @posts.each do |post|  %>
+<% @posts.each do |t|  %>
   <li> 
       <ul>
-        <li class="small_teaser_image"><%= link_to image_tag(post.image_url(:small_teaser)), post_path(post.permalink) if post.image? %></li>
-        <li class="small_teaser_title"><h4><%= link_to post.title, post_path(post.permalink) %></h4></li>
-        <li class="small_teaser_social"><p><fb:like href="http://odation.com/posts/<%= post.permalink %>" send="false" layout="button_count" width="450" show_faces="false" font=""></fb:like></p></li>
+        <li class="small_teaser_image"><%= link_to image_tag(t.image_url(:small_teaser)), post_path(t) if t.image? %></li>
+        <li class="small_teaser_title"><h4><%= link_to t.title, post_path(t) %></h4></li>
+        <li class="small_teaser_social"><p><fb:like href="http://odation.com/posts/<%= t.permalink %>" send="false" layout="button_count" width="450" show_faces="false" font=""></fb:like></p></li>
         </ul>
 
     </li> 
