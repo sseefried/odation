@@ -1,14 +1,52 @@
 <%= form_for @post, :html => { :multipart => true } do |f| %>
+  <div class="post_form">
+   <%= render "shared/error_messages", :target => @post %>
+   
+   <h3>Content</h3>
+    <ul>
+      <li><%= f.label :title, "Title" %> <%= f.text_field :title %></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
-  <%= f.text_field :title %>
-  <%= f.text_area :body %>
-  <%= f.text_field :permalink %>
-  <%= f.file_field :image %>
-  <%# f.label :remote_image_url, "or image URL" %><br />
-  <%# f.text_field :remote_image_url %>
-  <%= f.label :tag_tokens, "Authors" %><br />
-     <%= f.text_field :tag_tokens, "data-pre" => @post.tags.map(&:attributes).to_json %>
-  <%= f.submit  %> 
+  
+    <ul>
+      <li><%= f.label :body, "Body" %> <%= f.text_area :body %></li>
+    </ul>
+    <h3>Meta</h3>
+      <ul>
+        <li><%= f.label :permalink, "Clean URL" %> <%= f.text_field :permalink %></li>
+        <li></li>
+        
+      </ul>
+      <h3>Tags</h3>
+      <ul>
+        <li><span>Categorize your posts (eg: travel, funny, flights). Start typing for suggestions. New tags must be added by administrator.</span><%= f.text_field :tag_tokens, "data-pre" => @post.tags.map(&:attributes).to_json %>
+          </li>
+        </ul>
+      
+      <h3>Images</h3>
+      <ul>
+        <li><%= image_tag(@post.image_url(:teaser)) if @post.image? %><%= f.check_box :remove_image if @post.image? %><%= "Remove Image" if @post.image? %></li>
+        <li><%= f.label :image, "Image" %> <%= f.file_field :image %><%= f.hidden_field :image_cache %></li>
+        <li><%= f.label :remote_image_url, "or image URL" %>  <%= f.text_field :remote_image_url %></li>
+      </ul>
+    
+    
+      <div class="submission">
+        <%= f.submit %> 
+      </div><!-- .submission -->
+
+  
+    
+  </div><!-- .post_form -->
   
 
  

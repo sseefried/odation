@@ -21,11 +21,11 @@
      <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
     <div class="clearfix"></div><!-- .clearfix -->      
     
-    <p>The tags for this post: <ul>
+    <p>The tags for this post: 
     <% for tag in @post.tags %>
-      <%= tag.name %>,
+      <%= link_to tag.name, tag_path(tag) %>, 
     <% end %>
-    </ul></p>  
+    </p>  
     <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
 
 
@@ -38,6 +38,7 @@
 
 </div><!-- .post -->
 <div class="post_comments">
+  <%= social_helpers(@post.permalink, @post.title, @post.body) %>
   <h2 style="border-top: 1px solid #efefef; margin-top: 10px;">Comments</h2>
 
   <div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
@@ -52,4 +53,4 @@
 <% end %>
 
 
-   <%= social_helpers(@post.id, @post.title, @post.body) %> 
+    

@@ -1,12 +1,14 @@
-<% page_title "Tag" %>
+<% page_title @tag.name %>
 
 <p>
-  <strong>Name:</strong>
-  <%= @tag.name %>
+  <%= link_to "Edit Tag", edit_tag_path(@tag) %> |
+  <%= link_to "Destroy Tag", @tag, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All Tags", tags_path %>
 </p>
 
-<p>
-  <%= link_to "Edit", edit_tag_path(@tag) %> |
-  <%= link_to "Destroy", @tag, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", tags_path %>
-</p>
+<h1><%= @tag.name %></h1>
+
+<%= render 'posts/posts', :target => @posts %> 
+
+<%= @tag.taggings  %>
+

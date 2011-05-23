@@ -206,7 +206,7 @@ ul.small_teaser { border-top: 1px solid #ccc; }
 /* line 93, ../../app/stylesheets/posts.scss */
 ul.small_teaser li { list-style: none; position: relative; display: block; margin-bottom: 8px; }
 /* line 94, ../../app/stylesheets/posts.scss */
-ul.small_teaser ul { border-bottom: 1px solid #ccc; min-height: 30px; }
+ul.small_teaser ul { border-bottom: 1px solid #ccc; min-height: 30px; clear: both; min-height: 65px; }
 /* line 96, ../../app/stylesheets/posts.scss */
 ul.small_teaser li.small_teaser_title, ul.small_teaser li.small_teaser_social { margin-left: 80px; }
 /* line 97, ../../app/stylesheets/posts.scss */
@@ -215,3 +215,23 @@ ul.small_teaser li.small_teaser_social { margin-top: 6px; height: 20px; width: 5
 ul.small_teaser li.small_teaser_title a { text-decoration: none; font-size: 14px; font-weight: bold; color: #174b7f; }
 /* line 99, ../../app/stylesheets/posts.scss */
 ul.small_teaser li img { position: absolute; top: 0; left: 0; margin-right: 5px; background: #fff; padding: 3px; border: 1px solid #dedede; }
+
+/** POST FORM **/
+/* line 104, ../../app/stylesheets/posts.scss */
+.post_form { background: #fff; border: 1px solid #ccc; padding: 20px; }
+/* line 105, ../../app/stylesheets/posts.scss */
+.post_form li { display: block; line-height: 28px; padding: 1px; }
+/* line 109, ../../app/stylesheets/posts.scss */
+.post_form li div.field_with_errors { clear: none; background: #ec4343; display: block; }
+/* line 113, ../../app/stylesheets/posts.scss */
+.post_form li div.field_with_errors label, .post_form li div.field_with_errors input { display: inline; padding: 4px; }
+/* line 119, ../../app/stylesheets/posts.scss */
+.post_form label { width: 80px; display: block; float: left; font-size: 12px; text-align: right; margin-right: 5px; }
+/* line 120, ../../app/stylesheets/posts.scss */
+.post_form input, .post_form textarea { padding: 2px; font-size: 14px; width: 300px; color: #333; border: 1px solid #ccc; }
+/* line 121, ../../app/stylesheets/posts.scss */
+.post_form h3 { line-height: 32px; background: #efefef; margin: 10px 0 5px; padding-left: 5px; }
+/* line 122, ../../app/stylesheets/posts.scss */
+.post_form span { font-size: 11px; color: #999; }
+/* line 123, ../../app/stylesheets/posts.scss */
+.post_form .submission input { background: #45a6d1; padding: 5px 10px; color: #fff; width: 120px; margin-top: 40px; }

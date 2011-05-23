@@ -90,8 +90,8 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
  /** POSTS BOX **/
 ul.small_teaser {
 	border-top: 1px solid #ccc;
-  li { list-style: none;position: relative; display: block; margin-bottom: 8px;   }
-	ul  { border-bottom: 1px solid #ccc; min-height: 30px; }
+  li { list-style: none;position: relative; display: block; margin-bottom: 8px;  }
+	ul  { border-bottom: 1px solid #ccc; min-height: 30px; clear: both; min-height: 65px; }
 
 	li.small_teaser_title, li.small_teaser_social {margin-left: 80px;  }
 	li.small_teaser_social { margin-top: 6px; height: 20px; width: 55px;}
@@ -100,4 +100,32 @@ ul.small_teaser {
 		background: #fff; padding: 3px; border: 1px solid #dedede; }
 	}
 
- 
+ /** POST FORM **/
+.post_form { background: #fff; border: 1px solid #ccc; padding: 20px;
+	li { 
+		display: block;
+		line-height: 28px;
+		padding: 1px; 
+		div.field_with_errors{
+      clear: none;
+			background: #ec4343;
+			display: block;
+      label, input { 
+				display: inline;  
+				padding: 4px; 
+			}
+		}
+	}
+	label { width: 80px; display: block; float: left; font-size: 12px; text-align: right; margin-right: 5px; }
+	input, textarea { padding: 2px; font-size: 14px; width: 300px; color: #333; border: 1px solid #ccc; }
+	h3 { line-height: 32px; background: #efefef; margin: 10px 0 5px; padding-left: 5px;}
+	span { font-size: 11px; color: #999;}
+	.submission input { 
+		background: #45a6d1;
+		padding: 5px 10px;
+		color: #fff;
+		width: 120px;
+		margin-top: 40px;
+		}
+	}
+	
