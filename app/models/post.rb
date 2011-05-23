@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   has_many :tags, :through => :taggings
   attr_reader :tag_tokens, :to_param
   
+
+  
   validates :title, :presence => true, :uniqueness => true
 
  def to_param

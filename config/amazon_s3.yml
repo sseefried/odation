@@ -1,0 +1,8 @@
+development:
+  bucket_name: odation_images
+  access_key_id: AKIAJV4L35PHYMY53TPA
+  secret_access_key: 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
+production:
+  bucket_name: odation_images
+  access_key_id: AKIAJV4L35PHYMY53TPA
+  secret_access_key: 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
