@@ -4,8 +4,8 @@
 <% @posts.each do |post|  %>
   <li> 
       <ul>
-        <li class="small_teaser_image"><%= link_to image_tag(post.image_url(:small_teaser)), post_path if post.image? %></li>
-        <li class="small_teaser_title"><h4><%= link_to post.title, post_path %></h4></li>
+        <li class="small_teaser_image"><%= link_to image_tag(post.image_url(:small_teaser)), post_path(post.permalink) if post.image? %></li>
+        <li class="small_teaser_title"><h4><%= link_to post.title, post_path(post.permalink) %></h4></li>
         <li class="small_teaser_social"><p><fb:like href="http://odation.com/posts/<%= post.permalink %>" send="false" layout="button_count" width="450" show_faces="false" font=""></fb:like></p></li>
         </ul>
 
