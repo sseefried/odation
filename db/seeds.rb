@@ -18,3 +18,7 @@ open("http://odation.com/seed/cities.txt") do |destinations|
       Destination.create!(:cityid => cityid, :countryid => countryid, :regionid => regionid, :title => city, :latitude => latitude, :longitude => longitude, :timezone => timezone, :dmaid => dmaid, :code => code)
   end
 end
+
+["Travel", "Deals", "Funny", "Industry", "International", "Australia", "Airlines", "Hotels", "Flights"].each do |tag|  
+  Tag.find_or_create_by_name tag  
+end
