@@ -2,9 +2,7 @@ class Post < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   has_many :taggings
   has_many :tags, :through => :taggings
-  attr_reader :tag_tokens, :to_param
-  
-
+  attr_reader :tag_tokens
   
   validates :title, :presence => true, :uniqueness => true
 

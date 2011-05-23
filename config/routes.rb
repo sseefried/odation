@@ -4,8 +4,9 @@ Odation::Application.routes.draw do
  
 
   resources :authentications
+  get "posts/index"
   resources :posts
-  get "posts/index"                   
+                    
       
   
   get "deals/index"
