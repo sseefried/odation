@@ -14,7 +14,7 @@ Odation::Application.routes.draw do
   get "home/index"
   get "places/index"
   resources :places
-                   
+  resources :tags                 
   match 'auth/:provider/callback' => 'authentications#create'
   
 

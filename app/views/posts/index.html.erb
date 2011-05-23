@@ -2,16 +2,13 @@
 
 <h1 class="mini-header"><span>All Posts</span></h1>
 
+  <%= render 'posts' %>
 
-
-     <%= render 'posts' %>
-
-<br/>   
+  <br/>   
 
 <%= admin_area do %>
   <%=  link_to 'Add a New Post', new_post_path %>
 <% end %>
-
 
 <% content_for :rightCol do %>
 

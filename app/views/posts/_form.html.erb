@@ -1,12 +1,16 @@
 <%= form_for @post, :html => { :multipart => true } do |f| %>
 
   <%= f.text_field :title %>
-  <%= f.text_field :body %>
+  <%= f.text_area :body %>
   <%= f.text_field :permalink %>
   <%= f.file_field :image %>
   <%= f.label :remote_image_url, "or image URL" %><br />
   <%= f.text_field :remote_image_url %>
-  <%= f.submit  %>
+  <%= f.label :tag_tokens, "Authors" %><br />
+     <%= f.text_field :tag_tokens, "data-pre" => @post.tags.map(&:attributes).to_json %>
+  <%= f.submit  %> 
+  
+
  
 <% end %>
            

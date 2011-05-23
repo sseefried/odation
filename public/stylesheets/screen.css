@@ -25,6 +25,9 @@ a img { border: none; }
 /* line 115, ../../../../.rvm/gems/ruby-1.9.2-rc2@rails3tutorial/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
+/* line 12, ../../app/stylesheets/screen.scss */
+.clearfix { clear: both; line-height: 1; height: 1px; }
+
 /* line 14, ../../app/stylesheets/screen.scss */
 body { font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
@@ -107,9 +110,6 @@ a:hover { border: none; background: none; }
 /* line 146, ../../app/stylesheets/screen.scss */
 h2 span { color: #ff9000; font-style: oblique; }
 
-/* line 148, ../../app/stylesheets/screen.scss */
-.clearfix { clear: both; line-height: 1; height: 1px; }
-
 /* line 1, ../../app/stylesheets/admin.scss */
 .authentications { margin-bottom: 30px; }
 
@@ -156,36 +156,62 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 /* line 25, ../../app/stylesheets/posts.scss */
 .post_teaser p { margin: 8px 0 15px 0; padding: 0; line-height: 22px; width: 340px; }
 /* line 31, ../../app/stylesheets/posts.scss */
-.post_teaser p span { color: red; font-size: 11px; text-transform: uppercase; font-weight: bold; }
-/* line 33, ../../app/stylesheets/posts.scss */
-.post_teaser .post_links { font-size: 12px; }
-/* line 36, ../../app/stylesheets/posts.scss */
-.post_teaser img { position: absolute; top: 18px; right: 491px; }
+.post_teaser p span { font-size: 11px; text-transform: uppercase; font-weight: bold; color: #333; }
+/* line 38, ../../app/stylesheets/posts.scss */
+.post_teaser span.tag-type-1 { color: #34c15c; }
+/* line 39, ../../app/stylesheets/posts.scss */
+.post_teaser span.tag-type-2 { color: #2e7eb7; }
+/* line 40, ../../app/stylesheets/posts.scss */
+.post_teaser span.tag-type-3 { color: #ff8000; }
 /* line 41, ../../app/stylesheets/posts.scss */
-.post_teaser .content { margin-left: 180px; min-height: 100px; position: relative; }
+.post_teaser span.tag-type-4 { color: #2566a9; }
+/* line 43, ../../app/stylesheets/posts.scss */
+.post_teaser .post_links { font-size: 12px; }
 /* line 46, ../../app/stylesheets/posts.scss */
-.post_teaser .post_description { position: relative; }
-/* line 50, ../../app/stylesheets/posts.scss */
-.post_teaser .twitter-share-button { position: absolute; top: -1px; right: 0; }
+.post_teaser img { position: absolute; top: 18px; right: 491px; }
 /* line 51, ../../app/stylesheets/posts.scss */
+.post_teaser .content { margin-left: 180px; min-height: 100px; position: relative; }
+/* line 56, ../../app/stylesheets/posts.scss */
+.post_teaser .post_description { position: relative; }
+/* line 60, ../../app/stylesheets/posts.scss */
+.post_teaser .twitter-share-button { position: absolute; top: -1px; right: 0; }
+/* line 61, ../../app/stylesheets/posts.scss */
 .post_teaser #fb-root { position: absolute; bottom: 0; left: 0; }
 
-/* line 54, ../../app/stylesheets/posts.scss */
+/* line 64, ../../app/stylesheets/posts.scss */
 .with_image { margin-left: 250px; }
 
-/* line 56, ../../app/stylesheets/posts.scss */
+/* line 66, ../../app/stylesheets/posts.scss */
 .teaser_social_helper { position: absolute; top: 0px; right: 15px; width: 115px; }
 
 /** POSTS FULL **/
-/* line 60, ../../app/stylesheets/posts.scss */
-.post { background: url(/images/temp_posst_back.jpg) top left no-repeat; }
-/* line 62, ../../app/stylesheets/posts.scss */
-.post h1 { font-size: 28px; line-height: 60px; }
-/* line 63, ../../app/stylesheets/posts.scss */
-.post .post_author { margin-bottom: 5px; line-height: 50px; }
-/* line 66, ../../app/stylesheets/posts.scss */
-.post .post_author img { float: left; margin-right: 12px; }
 /* line 70, ../../app/stylesheets/posts.scss */
+.post { background: url(/images/temp_posst_back.jpg) top left no-repeat; }
+/* line 72, ../../app/stylesheets/posts.scss */
+.post h1 { font-size: 28px; line-height: 60px; }
+/* line 73, ../../app/stylesheets/posts.scss */
+.post .post_author { margin-bottom: 5px; line-height: 50px; }
+/* line 76, ../../app/stylesheets/posts.scss */
+.post .post_author img { float: left; margin-right: 12px; }
+/* line 80, ../../app/stylesheets/posts.scss */
 .post .post_posted { font-size: 11px; margin: 0; padding: 0; }
-/* line 71, ../../app/stylesheets/posts.scss */
+/* line 81, ../../app/stylesheets/posts.scss */
 .post .post_content { padding-top: 15px; border-top: 2px solid #666; }
+/* line 84, ../../app/stylesheets/posts.scss */
+.post .post_content img { float: left; margin-right: 12px; }
+
+/** POSTS BOX **/
+/* line 91, ../../app/stylesheets/posts.scss */
+ul.small_teaser { border-top: 1px solid #ccc; }
+/* line 93, ../../app/stylesheets/posts.scss */
+ul.small_teaser li { list-style: none; position: relative; display: block; margin-bottom: 8px; }
+/* line 94, ../../app/stylesheets/posts.scss */
+ul.small_teaser ul { border-bottom: 1px solid #ccc; min-height: 30px; }
+/* line 96, ../../app/stylesheets/posts.scss */
+ul.small_teaser li.small_teaser_title, ul.small_teaser li.small_teaser_social { margin-left: 80px; }
+/* line 97, ../../app/stylesheets/posts.scss */
+ul.small_teaser li.small_teaser_social { margin-top: 6px; height: 20px; width: 55px; }
+/* line 98, ../../app/stylesheets/posts.scss */
+ul.small_teaser li.small_teaser_title a { text-decoration: none; font-size: 14px; font-weight: bold; color: #174b7f; }
+/* line 99, ../../app/stylesheets/posts.scss */
+ul.small_teaser li img { position: absolute; top: 0; left: 0; margin-right: 5px; background: #fff; padding: 3px; border: 1px solid #dedede; }

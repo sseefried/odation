@@ -15,13 +15,18 @@
   <p class="post_posted">Posted: <%= posted_at(@post.created_at) %></p>
   
   <div class="post_content">
- 
- 
-       <%= image_tag @post.image_url(:thumb) if @post.image? %>
-      <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
-
-    <p>The tags for this post</p>  
-      <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
+     
+     <%= image_tag @post.image_url(:thumb) if @post.image? %>
+     
+     <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 
+    <div class="clearfix"></div><!-- .clearfix -->      
+    
+    <p>The tags for this post: <ul>
+    <% for tag in @post.tags %>
+      <%= tag.name %>,
+    <% end %>
+    </ul></p>  
+    <a href="http://twitter.com/share?text=Some_Quote" >Tweet</a>
 
 
 

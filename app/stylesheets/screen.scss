@@ -9,7 +9,7 @@ $primaryborders : #efefef;
 
 // Colors 
 
-
+.clearfix { clear: both; line-height: 1; height: 1px;} 
 
 body {font-family: Arial, Cambria, Verdana, Helvetica, sans-serif; background: #f9f9f9; }
 
@@ -145,7 +145,7 @@ a:hover { border: none; background: none;}
 .rightCol { float: left; width: 300px; margin-left: 15px; }
 h2 span { color: #ff9000; font-style: oblique;}
 	
-.clearfix { clear: both; line-height: 1; height: 1px;}  
+ 
 
 @import "admin";
 

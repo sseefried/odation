@@ -9,7 +9,7 @@
 
     <div class="post_description">
       <%= social_helpers(post.permalink, post.title, post.body, "box") %>
-      <p><span>Category</span> - <%= raw shorten(RedCloth.new(post.body), count = 140) if post.body? %></p>
+      <p><span class="tag-type-<%= post.tags.first["id"] %>"><%= post.tags.first["name"] %></span> - <%= raw shorten(RedCloth.new(post.body), count = 140) if post.body? %></p>
 
 
       <div class="post_info">  

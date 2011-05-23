@@ -28,7 +28,17 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 		line-height: 22px;
 		width: 340px;
 	}
-	p span  {color: red; font-size: 11px; text-transform: uppercase; font-weight: bold;} 
+	p span  {
+		font-size: 11px; 
+		text-transform: 
+		uppercase; 
+		font-weight: bold;
+		color: #333;
+	}
+	span.tag-type-1 { color: #34c15c;}
+	span.tag-type-2 { color: #2e7eb7;}
+	span.tag-type-3 { color: #ff8000;}
+	span.tag-type-4 { color: #2566a9;}
 	
 	.post_links {
 		font-size: 12px;
@@ -65,11 +75,29 @@ h1.mini-header { font-size: 11px; text-transform: uppercase; color: #ccc; backgr
 		line-height: 50px;
 		img { 
 			float: left; 
-			margin-right: 12px;}
+			margin-right: 12px; }
 		}
 		.post_posted { font-size: 11px; margin: 0; padding: 0;}
 	  .post_content {
 		padding-top: 15px; 
-		border-top: 2px solid #666;
+		border-top: 2px solid #666; 
+		img { 
+			float: left; 
+			margin-right: 12px; }
 		}
 	}
+	
+ /** POSTS BOX **/
+ul.small_teaser {
+	border-top: 1px solid #ccc;
+  li { list-style: none;position: relative; display: block; margin-bottom: 8px;   }
+	ul  { border-bottom: 1px solid #ccc; min-height: 30px; }
+
+	li.small_teaser_title, li.small_teaser_social {margin-left: 80px;  }
+	li.small_teaser_social { margin-top: 6px; height: 20px; width: 55px;}
+	li.small_teaser_title a {text-decoration: none; font-size: 14px; font-weight: bold; color: #174b7f;  }
+	li img { position: absolute; top: 0; left: 0; margin-right: 5px;
+		background: #fff; padding: 3px; border: 1px solid #dedede; }
+	}
+
+ 
