@@ -1,6 +1,15 @@
 <% page_title(@post.title + " - from Odation.com") %>
 
+<% do notice if :notice? %> 
 <% :notice %>  
+<% end  %>     
+
+<% content_for :meta do  %>      
+  <meta property="og:type" content="article" /> 
+  <meta property="og:site_name" content="Odation.com"/> 
+  <meta property="og:title" content="<%= @post.title %>" /> 
+  <meta property="fb:app_id" content="10930230582311 "/>     
+<% end %>     
      
      
 <div class="post">
