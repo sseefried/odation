@@ -15,7 +15,7 @@
   <p class="post_posted">Posted: <%= posted_at(@post.created_at) %></p>
   
   <div class="post_content">
-     
+     <%= social_helpers(@post.permalink, @post.title, @post.body) %>
      <%= image_tag @post.image_url(:thumb) if @post.image? %>
      
      <%= raw RedCloth.new(@post.body).to_html if @post.body? %> 

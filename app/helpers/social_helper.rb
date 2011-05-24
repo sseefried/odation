@@ -14,7 +14,7 @@ HTML
 
     html = ""
     html = <<HTML
-       <div class="teaser_social_helper"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{permalink}" send="false" layout="box_count" width="450" show_faces="false" font=""></fb:like>
+       <div class="teaser_social_helper"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{permalink}" send="false" layout="box_count" width="45" show_faces="false" font=""></fb:like>
        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="odation">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>    </div>
 HTML
     html.html_safe  

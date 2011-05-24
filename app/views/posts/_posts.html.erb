@@ -6,16 +6,14 @@
     <h2><%= link_to post.title, post_path(post) %></h2>
 
     <div class="post_description">
-      <%= social_helpers(post.permalink, post.title, post.body, "box") %>
-      <p><span class="tag-type-<%= post.tags.first["id"] %>"><%= post.tags.first["name"] %></span> - <%= raw shorten(RedCloth.new(post.body), count = 140) if post.body? %></p>
-
+    
 
       <div class="post_info">  
         <p><%= link_to 'Read Post', post_path(post) %> | Comments (<%= @graph.get_object("http://odation.com/posts/#{post.permalink.to_s}")["comments"] %>)  by <A href=" ">Author</a> <%= posted_at(post.created_at) %></p>
       </div><!-- .post_info -->   
     </div>
   </div><!-- .content -->
-   <%= social_helpers(post.permalink, post.title, post.body, "box") %>
+  
   
 
 </div>  
