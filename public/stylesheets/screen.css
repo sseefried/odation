@@ -46,6 +46,9 @@ p { color: #666; padding-bottom: 26px; line-height: 22px; font-size: 12px; }
 /* line 20, ../../app/stylesheets/screen.scss */
 a:hover { border: none; background: none; }
 
+/* line 22, ../../app/stylesheets/screen.scss */
+#notice { border: 1px solid #666; background: #cef; }
+
 /* line 24, ../../app/stylesheets/screen.scss */
 .loginStrap { background: #34c15c; color: #fff; text-shadow: #666 1px 1px 1px; padding: 5px 0; border-bottom: 1px solid #fff; font-weight: bold; line-height: 40px; }
 /* line 32, ../../app/stylesheets/screen.scss */

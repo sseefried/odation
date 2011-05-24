@@ -1,0 +1,22 @@
+#
+# Format:
+# 
+# <heroku_san shorthand name>:
+#   app: <Heroku app name>
+#   config:
+#     - <Heroku config:var name>: <Heroku config:var value>
+#
+production: 
+  app: odation-prod
+  config:
+    BUNDLE_WITHOUT: "development:test"
+    GOOGLE_ANALYTICS: "UA-12345678-1"
+
+staging:
+  app: odation-staging
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+
+demo: 
+  app: odation-demo
+  config: *default
