@@ -1,14 +1,15 @@
 <% page_title @tag.name %>
 
-<p>
-  <%= link_to "Edit Tag", edit_tag_path(@tag) %> |
-  <%= link_to "Destroy Tag", @tag, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All Tags", tags_path %>
-</p>
+
 
 <h1><%= @tag.name %></h1>
 
-<%= render 'posts/posts', :target => @posts %> 
+  <%= link_to "Edit Tag", edit_tag_path(@tag) %> |
+  <%= link_to "Destroy Tag", @tag, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All Tags", tags_path %>
 
-<%= @tag.taggings %>
-
+     
+                                  
+<% @tag.posts.each  do |post|  %>  
+  <%= render :partial => 'posts/posts', :locals => { :post => post } %>
+<% end %>

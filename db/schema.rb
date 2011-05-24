@@ -70,7 +70,6 @@ ActiveRecord::Schema.define(:version => 20110523031320) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
-    t.integer  "author"
   end
 
   create_table "sessions", :force => true do |t|

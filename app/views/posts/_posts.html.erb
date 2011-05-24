@@ -1,5 +1,3 @@
-<% @posts.each do |post| %>
-
 <div class="post_teaser <%= puts "with_image" if post.image? %>">
       
   <%= image_tag post.image_url(:teaser) if post.image? %>
@@ -17,8 +15,7 @@
       </div><!-- .post_info -->   
     </div>
   </div><!-- .content -->
-  
+   <%= social_helpers(post.permalink, post.title, post.body, "box") %>
   
 
 </div>  
-<% end %>        

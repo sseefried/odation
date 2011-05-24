@@ -28,6 +28,11 @@
 
 
 <%= content_for :rightCol do %>
-    <br/>
-    <%= render "shared/latest_posts" %>
+
+    
+    <% is_any(@posts, "pane") do %>
+      <%= render "shared/latest_posts" %>
+    <% end %>
+    
+    
 <% end %>

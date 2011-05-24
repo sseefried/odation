@@ -2,8 +2,9 @@
 
 <h1 class="mini-header"><span>All Posts</span></h1>
 
-  <%= render 'posts' %>
-
+  <% @posts.each do |post| %>  
+    <%= render :partial => 'posts', :locals => { :post => post } %>
+  <% end %>
   <br/>   
 
 <%= admin_area do %>

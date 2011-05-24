@@ -36,6 +36,10 @@ end
     end
   end
   
+  def is_any(post, style_class ,&block)
+     content_tag(:div, :class => style_class,&block) if post 
+  end
+  
   def posted_at(post_created_at)
     too_long_ago = Time.now - 120.minutes
     if (post_created_at > too_long_ago)
