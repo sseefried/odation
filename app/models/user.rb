@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   has_many :authentications
   has_many :posts
+  has_many :assignments
+  has_many :roles, :through => :assignments
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -8,6 +10,13 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  
+  def role_symbols
+    roles.map do |role|
+      role.name.underscore.to_sym
+    end
+  end
+  
   
   def apply_omniauth(omniauth)
     self.email = omniauth['user_info']['email'] if email.blank?

@@ -22,3 +22,7 @@ end
 ["Travel", "Deals", "Funny", "Industry", "International", "Australia", "Airlines", "Hotels", "Flights"].each do |tag|  
   Tag.find_or_create_by_name tag  
 end
+
+["Admin", "Moderator", "Author"].each do |role|
+  Role.find_or_create_by_name role
+end
