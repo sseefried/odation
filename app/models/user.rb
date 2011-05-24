@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :authentications
-  
+  has_many :posts
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   def password_required?
     (authentications.empty? || !password.blank?) && super
   end
+  
 
   
 end

@@ -1,9 +1,10 @@
 <% page_title("Latest Travel Stories from around the globe.") %>
 
 <h1 class="mini-header"><span>All Posts</span></h1>
-
+ <% is_any(@posts, "pane") do %>
   <% @posts.each do |post| %>  
     <%= render :partial => 'posts', :locals => { :post => post } %>
+  <% end %>
   <% end %>
   <br/>   
 
