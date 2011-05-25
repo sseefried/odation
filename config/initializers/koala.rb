@@ -3,7 +3,7 @@
 # automatically use Facebook settings from here if none are given
 
 module Facebook
-  CONFIG = CONFIG = YAML.load(ERB.new(File.read("#{RAILS_ROOT}/config/facebook.yml")).result)[RAILS_ENV]
+  CONFIG = YAML.load(ERB.new(File.read("#{RAILS_ROOT}/config/facebook.yml")).result)[RAILS_ENV]
   APP_ID = CONFIG['app_id']
   SECRET = CONFIG['secret_key']
 end
