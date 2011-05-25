@@ -3,7 +3,7 @@
 # automatically use Facebook settings from here if none are given
 
 module Facebook
-  CONFIG = YAML.load_file(Rails.root.join("config/facebook.yml"))[Rails.env]
+  CONFIG = YAML.load_file(Rails.root.join("config/facebook.yml"))[RAILS_ENV]
   APP_ID = CONFIG['app_id']
   SECRET = CONFIG['secret_key']
 end
