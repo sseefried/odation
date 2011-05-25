@@ -7,4 +7,10 @@ test:
   secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'
 production:
   app_id: '109302305823116'
+  secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'     
+demo:
+  app_id: '109302305823116'
+  secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'
+staging:
+  app_id: '109302305823116'
   secret_key: '6f47102b5953e0c2b36f2a2f756f29ef'
