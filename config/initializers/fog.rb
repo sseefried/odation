@@ -7,7 +7,7 @@ CarrierWave.configure do |config|
       }
       
       
-      config.fog_directory  = 'odationprod'                     # required
+      config.fog_directory  = 'odationimg'                     # required
       
       
      config.fog_host       = 'https://s3.amazonaws.com/'            # optional, defaults to nil

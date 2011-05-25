@@ -4,7 +4,7 @@ Odation::Application.routes.draw do
  
 
   resources :authentications
-  get "posts/index"
+  get "posts/index" 
   resources :posts
                     
       
