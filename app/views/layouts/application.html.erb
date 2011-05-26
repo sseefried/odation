@@ -33,7 +33,7 @@
  
 </head>
 <body>
-  <% if (Rails.env == "development" or "staging") %>
+  <% environment(Rails.env) do %>
     <div style="position: absolute; top: 0; left: 0; margin: 4px; border: 1px solid red; background: #fff; padding: 10px; z-index:1000 ">
     <p><%= Rails.env.capitalize %></p>
     </div>

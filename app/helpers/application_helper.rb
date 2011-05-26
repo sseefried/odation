@@ -75,5 +75,12 @@ end
        end
     end
   end
+  
+  def environment(env, &block)
+    if env == "development"
+      content_tag(:div, :class => "devel",  &block)
+    end
+  end
+    
 
 end
