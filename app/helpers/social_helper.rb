@@ -6,7 +6,7 @@ def social_helpers(permalink, title, body, type = "button")
       if (type == "button")
     html = ""
     html = <<HTML
-      <div class="social_header"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{permalink}" send="true"  layout="button_count" width="450" show_faces="false" font=""></fb:like><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="odation">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><a href=" ">Send Email</a></div>
+      <div class="social_header"><div id="fb-root"></div><fb:like href="#{Rails.root}/posts/#{permalink}" send="true"  layout="button_count" width="450" show_faces="false" font=""></fb:like><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="odation">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><a href=" ">Send Email</a></div>
 HTML
     html.html_safe                   
 
@@ -14,7 +14,7 @@ HTML
 
     html = ""
     html = <<HTML
-       <div class="teaser_social_helper"><div id="fb-root"></div><fb:like href="http://odation.com/posts/#{permalink}" send="false" layout="box_count" width="45" show_faces="false" font=""></fb:like>
+       <div class="teaser_social_helper"><div id="fb-root"></div><fb:like href="#{Rails.root}/posts/#{permalink}" send="false" layout="box_count" width="45" show_faces="false" font=""></fb:like>
        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="odation">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>    </div>
 HTML
     html.html_safe  

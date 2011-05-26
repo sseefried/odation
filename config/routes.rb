@@ -1,7 +1,19 @@
 Odation::Application.routes.draw do
 
+  get "profiles/index"
+
+  get "profiles/show"
+
+  get "profiles/edit"
+
+  get "profiles/destroy"
+
+  get "profiles/update"
+
+  get "profiles/create"
+
   get "users/index"
-  resources :users, :only => [:index, :edit]
+  resources :users
   resources :twitter_account
  
 

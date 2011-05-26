@@ -63,7 +63,7 @@
   <%= social_helpers(@post.permalink, @post.title, @post.body) %>
   <h2 style="border-top: 1px solid #efefef; margin-top: 10px;">Comments</h2>
 
-  <div id="fb-root"></div><fb:comments href="http://odation.com/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
+  <div id="fb-root"></div><fb:comments href="<%= Rails.root %>/posts/<%= @post.permalink %>" num_posts="4" width="640"></fb:comments>
   
 </div><!-- .post_comments --> 
 <%= admin_area do  %>
