@@ -33,7 +33,11 @@
  
 </head>
 <body>
-
+  <% if (Rails.env == "development" or "staging") %>
+    <div style="position: absolute; top: 0; left: 0; margin: 4px; border: 1px solid red; background: #fff; padding: 10px; z-index:1000 ">
+    <p><%= Rails.env.capitalize %></p>
+    </div>
+  <% end %>
   <%= not_signed_in do %>
     <%= render 'shared/loginStrap' %>
   <% end %>
@@ -61,8 +65,10 @@
             <div class="block">
           
               <div class="blockContent">
+                <%= image_tag current_user.image_url(:small_teaser)  if current_user.image_url  %>
                 User id - <%= current_user.id %><br/>
-                <%= current_user.email %><br/>
+                <%= current_user.email %> - <%= link_to "Edit", edit_user_path(current_user) %><br/>
+                
                 
                 <% link_to 'Sign Out', destroy_session_url(current_user) %> 
               

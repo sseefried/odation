@@ -1,7 +1,9 @@
 class User < ActiveRecord::Base
+    mount_uploader :image, ImageUploader 
   has_many :authentications
   has_many :posts
   has_many :assignments
+
   has_many :roles, :through => :assignments
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -9,7 +11,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :image
   
   def role_symbols
     roles.map do |role|

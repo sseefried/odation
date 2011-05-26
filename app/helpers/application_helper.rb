@@ -36,7 +36,7 @@ end
     end
   end
   
-  def is_any(post, style_class ,&block)
+  def is_any(post, style_class = "block" ,&block)
      content_tag(:div, :class => style_class,&block) if post 
   end
   
@@ -58,6 +58,22 @@ end
   	else 
   		string
   	end
+  end
+  
+  def avatar_helper(content)
+    content.user.authentications.each do |t|
+      if (t.provider == "facebook") && ( @graph.get_picture? )
+        
+          image_tag @graph.get_picture(t.uid)
+      
+      else
+        image_tag content.user.image_url(:small_teaser), :title => "Author - #{content.user.email}", :class => "avatar"
+        
+      end
+      if (t.provider == "twitter")
+         image_tag content.user.image_url(:small_teaser), :title => "Author - #{content.user.email}", :class => "avatar"
+       end
+    end
   end
 
 end

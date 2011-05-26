@@ -1,10 +1,14 @@
 class Post < ActiveRecord::Base
   mount_uploader :image, ImageUploader
+  
   belongs_to :user
   has_many :taggings
   has_many :tags, :through => :taggings
+  
   attr_reader :tag_tokens
-    before_save :create_clean_url   
+  
+  before_save :create_clean_url   
+  
   validates :title, :presence => true, :uniqueness => true
   validates :body, :presence => true
 
@@ -15,7 +19,6 @@ class Post < ActiveRecord::Base
   def tag_tokens=(ids)
     self.tag_ids = ids.split(",")
   end
- 
 
 
   private

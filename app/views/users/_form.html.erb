@@ -1,0 +1,12 @@
+
+
+    
+    <%= form_for @user, :html => {:multipart => true} do |f| %>
+       <p>
+         <label>My Avatar</label>
+         <%= f.file_field :image %>
+         <%= f.hidden_field :image_cache %>
+       </p>    
+       
+       <%= f.submit %>
+     <% end %>

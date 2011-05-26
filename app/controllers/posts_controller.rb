@@ -4,7 +4,10 @@ class PostsController < ApplicationController
  before_filter :koala_graph
 
 def koala_graph
-  @graph = Koala::Facebook::GraphAPI.new 
+  
+  oauth = Koala::Facebook::OAuth.new("927472d970b098cc3a14fc14bfbef606", "41f3a21f84e3ba4a085044fc947fe508", "http://odation.dev")
+  token = oauth.get_app_access_token
+  @graph = Koala::Facebook::GraphAPI.new(token) 
 end
                                      
 
@@ -39,8 +42,14 @@ end
   end
 
   # GET /posts/1/edit
+   
   def edit
     @post = Post.find_by_permalink(params[:id])
+
+      respond_to do |format|
+        format.html # index.html.erb
+        format.xml  { render :xml => @post }
+      end
   end
 
   # POST /posts

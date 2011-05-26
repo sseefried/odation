@@ -1,6 +1,8 @@
 Odation::Application.routes.draw do
 
-  resource :twitter_account
+  get "users/index"
+  resources :users, :only => [:index, :edit]
+  resources :twitter_account
  
 
   resources :authentications
